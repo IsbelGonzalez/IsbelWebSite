@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/htmlcssesencial/htmlStyle.css" media="screen"/>
+    <title>Style</title>
+</head>
+<body>
+
+    <h1>Estilos por defecto</h1>
+
+    <p>El navegador tiene definido por defecto algunos estilos que si el programador no define usara los estilos por defecto</p>
+    <p>Los estilos por defecto (user agent stylesheet)</p>
+
+    <h1>Propiedades de estilo</h1>
+    <h2> <samp class="etiq-style">float: </samp>  <samp class="etiq-atrib"> left, right</samp> </h2>
+    
+    <p>Elimina el elemento del document flow que es el documento que se basa en el modelo de caja que permite calcular y mostrar todos los estilos que tienen la hoja por defecto</p>
+
+    <p>Permite que el elemento flote y los elementos adicionales fluyen a su alrrededor </p>
+
+    <p>Para el elemento parent los elemnetos flotantes hijos no existen. No los percive.</p>
+
+    <h3>Ejemplo</h3>
+
+    <div class="ejm-float">
+        
+        <img src="/img/icarrerafe/Cosmos.jpg" alt="" >
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate accusamus laboriosam soluta tempore nesciunt incidunt dignissimos quis repudiandae ab cupiditate? Nisi deleniti iusto ex in laborum fuga dolor veniam molestias?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium laudantium ratione doloribus voluptatem tempora tenetur mollitia error nulla blanditiis. Quam sequi dolorem doloribus eligendi cupiditate minima quo provident recusandae esse.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis incidunt asperiores officia rem sequi, nihil ut, odio animi laboriosam, culpa voluptate corporis est et labore? Quisquam voluptatem eveniet asperiores suscipit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, incidunt obcaecati et sit eligendi mollitia, quo dolorem cum itaque veritatis non tempore expedita quidem, dolores odit exercitationem saepe! Eius, explicabo.</p>
+    </div>
+
+
+    <div id="float">
+        <h1>Ejemplo float</h1>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="ejm-floatb">
+        <div class="avatar"><img src="/img/icarrerafe/Cosmos.jpg" alt=""></div>
+        <div class="contenido"> 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium omnis, sint impedit qui esse fugit sit repellendus quod saepe dolor reiciendis at cumque molestias quae aliquam inventore illo dolorem modi!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa incidunt a praesentium velit vel minima odio dolorum magni sunt eligendi at, cumque tempora aperiam deserunt maiores laborum exercitationem, nisi quae!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis obcaecati esse neque temporibus corrupti, beatae dolorum a molestias excepturi explicabo culpa sapiente. In possimus eveniet doloremque at quod incidunt omnis.</p>
+        </div>
+        
+    </div>
+
+    <h2> <samp class="etiq-style">clear: </samp>  <samp class="etiq-atrib"> both, left, right </samp> </h2>
+
+    <p>Clear despeja los elementos flotantes a los lados derecha izquierda o ambos.</p>
+
+    <p>Se usa con frecuencia agregando al final un div con clear: both para que el contenedor cubra todos los elementos flotantes comunmente llamado clearfix <a href="https://csscreator.com/atributes/containedfloat.php"></a> tambien overfloaw :hidden</p>
+
+    
+
+    <div id="cont" class="cf">
+        <div class="fA"></div>
+        <div class="fB"></div>
+        <div class="clear"></div>
+        <div class="clearfix"></div>
+    </div>
+
+    <h2> <samp class="etiq-style">overflow: </samp>  <samp class="etiq-atrib"> visible (Default), hidden, scroll (Siempre muestra las barras), auto (depende si si scroll si no nada)</samp> </h2>
+
+    <p>Permite definir la accion al realizar si existe un desbordamiento es decir que el elemento hijo ocupa mayor espacio que el elemento padre, El contenido que se desborda podar ser visible, escondido, o tener una barra de scroll para porde visualizar</p>
+
+    <div style=" background: brown; width: 300px; height: 100px; margin: 0 auto; overflow: scroll;">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint at eveniet eos eligendi quidem quis architecto voluptatibus culpa ipsam amet! Neque incidunt quae quam quod dignissimos? Quia corporis quas blanditiis.</p>    
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis libero sed exercitationem distinctio nobis ipsa officia! Facere labore quaerat excepturi, sint neque similique corrupti rerum itaque soluta? Cumque, similique nostrum. </p>
+    </div>
+
+
+    <h2> <samp class="etiq-style">potition: </samp>  <samp class="etiq-atrib"> static (Default posisionado mediante el modelo de caja), relative (relativo a si mismo), absolute (la referencia sera el padre si esta posicionado o el padre mayor que es el body), fixed (Se extrae totalmente y se fija relativo a la pantalla)</samp> </h2>
+
+    <p>Cambia la posicion del elemento que tiene por defecto en el document flow. Y el modelo de caja.</p>
+
+    <p>Al agregar la propiedad potition el elemento tendra acceso a otras propiedades que se derivan de esta. (top,)</p>
+    
+    <h3>Estas propiedades derivadas dependen de lo que se requiere pero no son obligatoras</h3>
+    <p><samp class="etiq-atrib">top </samp>Medida a desplazar desde el tope ej: 10px , -50px</p>
+    <p><samp class="etiq-atrib">bottom </samp>Medida a desplazar desde el abajo ej: 10px , -50px</p>
+    <p><samp class="etiq-atrib">left </samp>Medida a desplazar desde el izquierda ej: 10px , -50px</p>
+    <p><samp class="etiq-atrib">rigth </samp>Medida a desplazar desde el derecha ej: 10px , -50px</p>
+    <p><samp class="etiq-atrib">z-index </samp>Manipula el apilamiento a mayor z-index mas enciam esta ej: 999 , 990</p>
+    <div class="divPosition">
+    
+    <p>relative</p>
+    </div>
+    <div class="divPositionDos">
+        <p>absolute</p>
+        <div class="divPositionCinco"> <p>absolute</p></div>
+
+    </div>
+    <div class="divPositionTres"><p>static</p></div>
+    <div class="divPositionCuatro"> <p>fixed</p></div>
+
+
+    <h2> <samp class="etiq-style">display: </samp>  <samp class="etiq-atrib"> inline, block, inline-block</samp> </h2>
+
+    <p>  <samp class="etiq-atrib"> block</samp> Es el valor por defecto que indica que se despliega siguiendo las reglas del modelo de caja. Con acceso a todos sus atributos. El ancho del elemento sera el total disponible. </p>
+    <p>  <samp class="etiq-atrib"> inline</samp> Solo toma el espacio que ocupa el elemento. No da acceso a los elementos de la caja. Permite q halla mas elementos en la linea. </p>
+    <p>  <samp class="etiq-atrib"> inline-block</samp>Toma lo mejor de los dos mundos, Se puede acceder al modelo de caja y ocupa el espacio completo definido. </p>
+
+    
+    
+
+    <div id="contenEjDisp">
+        <div>Display</div>
+        <div>Block</div>
+       
+    </div>
+
+    <div id="contenEjDispI">
+        <div>Display</div>
+        <div>Inline</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+       
+    </div>
+
+    <div id="contenEjDispIB">
+        <div>Display</div>
+        <div>Inline-block</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+       
+    </div>
+
+    
+
+
+    
+
+</body>
+</html>

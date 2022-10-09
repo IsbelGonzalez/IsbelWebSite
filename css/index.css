@@ -1,0 +1,135 @@
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+html {
+    /* Esta propiedad resta el border y el pading del Box Model teniendo With y heigt el total */
+    /* Si no se coloca cuando se agrega pading o border el tamano de la caja aumento */
+    /* El margen esta afuera esto no va dentro de la caja */
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    /* ANAKIN */
+    background-color: #F5E2DB; 
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+main {
+   /* Bring Yelllow Crayola */
+    background-color: #F6AA1C; 
+    width: 1240px;
+   /* top | right | bottom | left */
+    margin: 2px 1em 0 auto; 
+}
+
+
+/* MENU PRINCIPAL  */
+header{
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px 10px 20px 10px;
+    /* Color jedi */
+    background-color: #7C5341;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center; 
+}
+.mlogo{
+    /* item header */
+    flex: 1 1 10%;
+    font-size: 40px;
+    color: #ECE8D6;
+    text-shadow: 1px 1px 1px #462219;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-content {
+     /* item header */
+     flex: 1 1 75%;
+}
+.menu-content ul{
+    /* Elimina el padding del ul */
+    padding-inline-start: 0px;
+    margin-top: 0;
+    margin-block-end: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline; 
+}
+.menu-content ul li{
+    margin: 0 2px; 
+}
+.menu-content a {
+    /* LEIA */
+    color: #ECE8D6;
+    font-size:small;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #462219;
+    margin: 0;
+    padding: 0;
+}
+.menu-app {
+     /* item header */
+     flex: 1 1 25%;
+}
+.menu-app ul{
+    /* Elimina el padding del ul */
+    padding-inline-start: 0px;
+    margin-top: 0;
+    margin-block-end: 0;
+    list-style: none;
+    justify-content: space-around;
+    display: flex;
+}
+.menu-app ul li{
+    margin: 0 2px;
+}
+
+.menu-app a {
+    /* LEIA */
+    color: #ECE8D6;
+    /* font-size: bolder; */
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #462219;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cursos */
+
+div.cursos{
+    
+    background-color: #941B0C;
+    border-radius: 20px;
+    margin: 20px 10px 20px 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+div.cursos article{
+    background-color: #DBA579;
+    border-radius: 20px;
+    margin: 20px 10px 20px 10px;
+
+    min-width: 200px;
+    min-height: 125px;
+}

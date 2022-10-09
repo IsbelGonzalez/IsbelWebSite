@@ -1,0 +1,13 @@
+
+h1:nth-child(1){
+    color: chocolate;
+    font-size: 50px;
+}
+
+.propt {
+    color: aqua;
+    background-color: darkcyan;
+}
+ul.proValue span{
+    color: darkorange;
+}

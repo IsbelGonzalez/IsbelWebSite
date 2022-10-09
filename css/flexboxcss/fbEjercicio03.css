@@ -1,0 +1,200 @@
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+html {
+    /* Esta propiedad resta el border y el pading del Box Model teniendo With y heigt el total */
+    /* Si no se coloca cuando se agrega pading o border el tamano de la caja aumento */
+    /* El margen esta afuera esto no va dentro de la caja */
+    box-sizing: border-box;
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: lightgray;
+    font-family: sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+main {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+
+    min-height: 100vh;
+}
+
+main > * {
+    order: 999;
+}
+
+
+ul.principal {
+    border-radius: 10px;
+    background: gray;
+    list-style: none;
+
+    /* width: 90%; */
+    /* max-width: 1000px; */
+    padding: 10px;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu {
+    height: 32px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 3 1 auto;
+}
+.menu a {
+    color: white;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px black;
+    margin: 0;
+    padding: 0;
+}
+
+.social {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 auto;
+}
+
+#movil {
+    background-color: gray;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#movil a{
+    color: white;
+    text-decoration: none;
+}
+
+/* Baner central */
+#banner {
+    /* height: 400px; */
+    /* Quitar */
+    /* width: 400px; */
+    border-radius: 10px;
+    background-image: url("/img/icarrerafe/Cosmos.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    flex: 1 1 100%;
+}
+
+/* Zona contenido */
+
+#contenido {
+    padding: 20px;
+    background: gray;
+    color: white;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+#contenido p{
+    margin: 0;
+}
+
+#subscribe {
+    padding: 20px;
+    background: gray;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#subscribe form {
+    display: flex;
+    justify-content: center;
+}
+#subscribe form > * {
+    flex: 1;
+    margin: 0 10px;
+}
+
+footer {
+    padding: 20px;
+    background: gray;
+    color: white;
+    border-radius: 10px;
+    margin-top: auto;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+
+}
+
+/* Puntos de ruptura Media query */
+@media (max-width: 768px){
+
+    main {
+        margin: 10px;
+    }
+    ul.principal    {
+        flex-wrap: wrap;
+        display: none;
+        order: 2;
+    }
+    .menu{
+        flex-basis: 33%;
+    }
+
+    li:nth-child(4){
+        flex-basis: 50%;
+    }
+    li:nth-child(5){
+        flex-basis: 50%;
+    }
+    .social{
+        margin-top: 20px;
+    }
+
+
+    #subscribe {
+        order: 3;
+        margin-top: 20px;
+    }
+    #subscribe form {
+        flex-wrap: wrap;
+    }
+    #subscribe form > * {
+        flex-basis: 100%;
+        margin: 10px 0;
+    }
+
+    #movil {
+        display: flex;
+        order: 1;
+    }
+}
+
+/* Media query */
+@media (max-width: 500px){
+    
+    .menu{
+        flex-basis: 100%;
+    }
+    
+}
+

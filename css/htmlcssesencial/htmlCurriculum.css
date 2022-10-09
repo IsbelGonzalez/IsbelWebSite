@@ -1,0 +1,70 @@
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* 
+p {
+    font-size: 20 px;
+    font-weight: bold;
+    font-style: italic;
+    /*  minuscula lowercase, primera mayuscula capitalize, mayuscula uppercase */
+    /* text-transform: uppercase; */
+
+    /* Espacio inter lineal */
+    /* line-height: 20px; */
+/* } */
+
+.fotoCarnet {
+    border: 2px solid black;
+    
+} 
+
+
+/* Estructura */
+.contenedor {
+
+    width: 500px;
+    min-height: 200px;
+    background-color: #ccc;
+    /* margin: 0 auto; */
+    border: 10px dotted rgb(57, 54, 54);
+    padding: 10px;
+
+
+    /* Evita q los elementos con float se salgan del contenedor */
+    overflow: hidden;
+    
+
+}
+
+
+.cabecera {
+    width: auto;
+    height: auto;
+    
+}
+
+textarea, input:not([type="radio"]):not([type="checkbox"]) {
+    display: block;
+    margin: 10px;
+
+}
+
+
+textarea, input:not([type="submit"]){
+    
+    width: 94%;
+    border: 3px solid lightpink;
+    padding: 3px;
+    margin-right: 10px;
+    
+}
+
+
+input[type="submit"]{
+
+    /* Contendor overfloat */
+    float: right;
+    
+
+}

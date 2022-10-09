@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="/css/htmlcssesencial/htmlMejoresPracticas.css" media="screen"/>
+    <title>Mejores Practicas de Programacion</title>
+</head>
+<body>
+    
+    <h1>MEJORES PRACTICAS</h1>
+
+    <h2>Encapsulamiento o  Controles independencia </h2>
+    <p>Cuando creas una parte del html es necesario pensar que se reutilizara como un control por lo que si lo movemos deberia quedar igual.</p>
+    <p>Que los controles sean independoentes de otros por lo que el style no debe depender de otros elementos. </p>
+
+
+    <p>Si iteramos el siguiente div quedara igual en los dos casos lo q es una buena practica</p>
+
+    <div style="background-color: rgb(10, 114, 66); width: 100%; height: 100px; margin-bottom: 10px;"></div>
+    <div style="background-color: gray; width: 100%; height: 100px; margin-bottom: 10px;"></div>
+    
+
+    <h2>Mejores practicas con IMAGENES</h2>
+
+    <p>Las imagenes de contenido que tienen un peso protagoniusta siempre tienen que ser em linea es decir con su etiqueta img. (Elemento del mark-up)</p>
+
+    <p>Otras imagenes como decorativas y de fondo que no tiene protagonismo en este caso usar background-image</p>
+
+    <p>No forzar dimenciones cuando no las sabemos dentro de la etiqueta img Whith y height</p>
+
+    <div style="background-color: gray; width: 100%; height: 100px;">
+        <img  src="/img/icarrerafe/Cosmos.jpg" alt="" style="width: auto; height:100%;"> 
+   </div>
+    <h3>Para lidear con las dimenciones de las imagenes</h3>
+
+    <p>En algunos casos se corta un poco la imagen pero no se pierde la calidad.</p>
+
+    <p>Primer metodo cortado para img</p>
+    <div class="cortado">
+        <img  src="/img/icarrerafe/Cosmos.jpg" alt=""> 
+    </div>
+
+    <p>Segundo  metodo para imgenes de fondo background-image </p>
+    <div class="cortadofondo">
+       
+    </div>
+
+
+    <h2>Imagenes de fondo</h2>
+
+    <p>Agregando texto en un background-image</p>
+    <div class="fondo">
+        Imagen de fondo del Cosmos
+    </div>
+
+    <h2>Sprite Optimizando las llamadas a imagenes</h2>
+    <p>Uso de background-position: -4px -70px;</p>
+
+    <p>Carga una unica imagen que contiene muchas imagenes con un tamano definido 21pxx21px asi se optimiza la carga de las imagenes en un solo get request</p>
+
+    <div id="sprite"> </div>
+
+    <div id="spriteU"> </div>
+    <div id="spriteUno"> </div>
+    <div id="spriteDos"> </div>
+
+    <div id="sprite21"> </div>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,89 @@
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+html {
+    /* Esta propiedad resta el border y el pading del Box Model teniendo With y heigt el total */
+    /* Si no se coloca cuando se agrega pading o border el tamano de la caja aumento */
+    /* El margen esta afuera esto no va dentro de la caja */
+    box-sizing: border-box;
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+}
+
+
+body{
+    background-color: lightgray;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+.contenedor {
+    background-color: lightseagreen;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 50vh;
+    justify-content: flex-start;
+    align-items: center;
+   
+}
+
+
+div[class*="item-"]{
+    background-color: yellow;
+    border: 2px solid black;
+    /* flex  0 ,1, auto*/
+    /* flex-grow: 0; */
+    /* flex-grow: 1; */
+    /* flex-grow: auto; */
+    flex: 1;
+    
+}
+
+div[class*="item-"]:nth-child(odd){
+    background-color: black;
+    color: white;
+}
+
+
+
+.contenedorB {
+    background-color:darkgoldenrod;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 50vh;
+    justify-content: flex-start;
+    align-items: center;
+   
+}
+
+
+div[class*="Bitem-"]:nth-child(1){
+    background-color: yellow;
+    border: 2px solid black;
+    color:#b8860b;
+    
+    flex-grow: 1;
+    flex-basis: 300px;
+    flex-shrink: 2;
+
+    
+}
+
+div[class*="Bitem-"]:nth-child(2){
+    background-color: black;
+    color: white;
+}
+
+
+div[class*="Bitem-"]:nth-child(3){
+    background-color:yellow;
+    color: darkorange;
+}

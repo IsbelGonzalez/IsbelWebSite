@@ -1,0 +1,87 @@
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+html {
+    /* Esta propiedad resta el border y el pading del Box Model teniendo With y heigt el total */
+    /* Si no se coloca cuando se agrega pading o border el tamano de la caja aumento */
+    /* El margen esta afuera esto no va dentro de la caja */
+    box-sizing: border-box;
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+}
+
+
+body {
+
+   background-color: lightgray;
+   font-family: sans-serif;
+
+   display: flex;
+   /* Centra en el main axis */
+   justify-content: center;
+  /* Alinea en el inicio cruz axis */
+   align-items: flex-start;
+}
+
+ul.principal {
+    border-radius: 10px;
+    background: gray;
+    list-style: none;
+
+    width: 90%;
+    max-width: 1000px;
+    padding: 10px;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu {
+    height: 32px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 3 1 auto;
+}
+.menu a {
+    color: white;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px black;
+    margin: 0;
+    padding: 0;
+}
+
+.social {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 auto;
+}
+
+/* Media query */
+@media (max-width: 768px){
+    ul.principal    {
+        flex-wrap: wrap;
+    }
+    .menu{
+        flex-basis: 33%;
+    }
+    .social{
+        margin-top: 20px;
+    }
+}
+
+/* Media query */
+@media (max-width: 500px){
+    
+    .menu{
+        flex-basis: 100%;
+    }
+    
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/flexboxcss/fbCSS.css">
+    <title>Flex Box CSS</title>
+</head>
+<body>
+
+    <h1>Flex Box. </h1>
+
+    <p>Caja flexible</p>
+
+    <h1>Conteiner propierties</h1>
+
+    <h2 class="propt">container {display: }</h2>
+    <p>Se agrega al contenedor o caja y permite desplegar las propiedades anidadas a esta.</p>
+    <ul class="proValue">
+        <li><span>block</span>  default..</li>
+        <li><span>flex</span> Caja Flexible.</li>
+    </ul>
+    
+
+    <h2 id="cfb_flexdir" class="propt">container {flex-direction: }</h2>
+    <p>Indica la direccion a la cual la caja se hace flexible.</p>
+    <p>Establece el eje al cual la caja se hace flexible. main axis  X , cross axis Y</p>
+
+    <ul class="proValue">
+        <li><span>row</span>  default:Se flexiona de forma horizontal.</li>
+        <li><span>column</span> Se despliega en forma vertical.</li>
+        <li><span>row-reverse</span>  Se flexiona de forma horizontal y los Item se revierten.</li>
+        <li><span>column-reverse</span> Se despliega en forma vertical y los item se revierte.</li>
+    </ul>
+
+    <h2 class="propt">container {height:}</h2>
+
+    <ul class="proValue">
+        <li><span>50vh</span>  El Item llenara el 50 % del la vista disponible view port heigth</li>
+        <li><span>100vh</span>El Item llena el 100% de la vista disponible .</li>
+    </ul>
+
+    <h2 id="cfb_flexwrap" class="propt">container {flex-wrap: }</h2>
+    <p>Permite que los Item colapcen al cumplir su tamano definido.</p>
+    <p>Es el ancho del Item que aunque se cree fijo esto depende de las otras propiedades del box.</p>
+    <p>Si el flex-grow la fila crece pero colapsa a un tamano cercano al definido solo crece para rellenar lo minimo posible.</p>
+    <p>En modo column tiene que tener el contenedor un height establecido</p>
+
+    <ul class="proValue">
+        <li><span>wrap</span> Hace que los Item colapcen al siguente nivel si no caben.</li>
+        <li><span>nowrap</span> default</li>
+        <li><span>wrap-reverse</span> Colapsan en reversa.</li>
+
+        
+    </ul>
+
+    <h2 id="cfb_justify-content" class="propt">container {justify-content: }</h2>
+    <p>Distribuye y alinea en el eje principal que por defecto es el horisontal.</p>
+    <p>Debes tener flex-direction: row; para que el sentido sea en el eje horizontal. Y colum para el eje vertical.</p>
+    <ul class="proValue">
+        <li><span>center </span>Alinea en el centro.</li>
+        <li><span>flex-start  default</span>Alinea al inicio. Es el valor por defecto.</li>
+        <li><span>flex-end </span>Alinea al final.</li>
+        <li><span>space-around </span>Ocupa el espacio disponible.</li>
+        <li><span>space-between </span>Ocupa el espacio disponible pero los Item se situan desde el inicio y el final.</li>
+    </ul>
+
+    <h2 id="cfb_align-items" class="propt">container {align-items: }</h2>
+    <p>Distribuye y alinea en el eje opuesto al por defecto .</p>
+    <p>Crux axis</p>
+    
+    <ul class="proValue">
+        <li><span>center </span>Alinea en el centro del eje cruz.</li>
+        <li><span>flex-end </span>Alinea al final del eje.</li>
+        <li><span>flex-start </span>Alinea al inicio del eje.</li>
+        <li><span> stretch </span>Alinea ocupando el espacio disponible.</li>
+        <li><span> baseline </span>Se alinea es la tipografia todas las letras en su linea de base de las letras .</li>
+    </ul>
+
+    <h1>Items propiedades</h1>
+
+    <h2 class="propt">containerItem {width: }</h2>
+    <p>Es el ancho del Item que aunque se cree fijo esto depende de las otras propiedades del box.</p>
+    <p></p>
+
+    <ul class="proValue">
+        <li><span>300px</span>  Si flex-grow esta activo los Item se ajustan a la pantalla pero con un tamano cercano al definido.</li>
+        <li><span>400px</span> Si no esta activo el flex-grow seran el width definido y los otros colapsan dependiendo del ancho de pantalla.</li>
+        
+    </ul>
+
+    <h2 id="ItOrder" class="propt">containerItem {order: }</h2>
+    <p>Se puede cambiar el orden de los Item.</p>
+    <p>Incluso podemos agregar reglas que cambien los item dependiendo del usuario o el navegador.</p>
+    <p>Aunque visualmente el orden cambia el navegador no sabe esto la seleccion sigue igual es solo efecto visual.</p>
+ 
+
+    <ul class="proValue">
+        <li><span>0 </span>Este es el valor de todos los Item por defecto.</li>
+        <li><span>1 </span>Se coloca primero todos los que tienen 0 y luego 1.</li>
+        <li><span>2 </span>Continuo al 1.</li>
+        <li><span>-1 </span>Tambien aceptan numeros negativos.</li>
+        
+    </ul>
+
+    <h2 id="ItemSelf" class="propt">containerItem {align-self: }</h2>
+    <p>Sobre escribe la posicion de un item en particular en el cruss axis.</p>
+
+    <ul class="proValue">
+        <li><span>center </span>Aliena el Item en el centro.</li>
+        <li><span>flex-start </span>Aliena inicio del eje.</li>
+        <li><span>flex-end </span>Aliena fin del eje.</li>
+        <li><span>stretch </span>Ajusta el item para que ocupe el espacio disponible.</li>
+        <li><span>baseline </span>Alinea sobre la liena base</li>
+    </ul>
+
+    <h2 id="Itemflex" class="propt">containerItem {flex: }</h2>
+    <p>Indica lo que se hace con el espacio sobrlare.</p>
+    <p>la palabra flex es un diminutivo para varios parametros flex-grow flex-shrink flex-basis</p>
+    <p>El valor que tome es una proporcion del espacio sobrate y no el tamano del item</p>
+
+    <ul class="proValue">
+        <li><span>0 1 auto </span>Valor por defecto y toma el espcio de la caja es decir no hace nada con el espacio sobrante.</li>
+        
+    </ul>
+
+    <h3 class="propt">containerItem {flex-grow: } recortado flex</h3>
+    <p>Es el factor de crecimiento y recive numeros positivos.</p>
+    <p>Proporcion del espacion del contenedor para repartir a los  Item q estan dentro del contenedor.</p>
+    <p>Crece en el main axis.</p>
+
+    <ul class="proValue">
+        <li><span>1</span>  Es una proporcion donde todos los items temdran el mismo tamano.</li>
+        <li><span>0.5</span> Un Item con la mitad del tamano del espacio sobrante.</li>
+        <li><span>1.5</span> La proporcion del Item sera de 1.5 del espacio sobrante.</li>
+    </ul>
+
+    <h3 class="propt">containerItem {flex-shrink: } recortado flex</h3>
+    <p>La proporcion a la cual el item se reduce cuando el espacio se reduce.</p>
+   
+
+    <ul class="proValue">
+        
+        <li><span>1</span>  Valor por defecto proporcion uno</li>
+        <li><span>2</span>  Se reduce al doble de la velocidad</li>
+    </ul>
+
+    <h3 class="propt">containerItem {flex-basic: } </h3>
+    <p>Es el tamano ideal de la caja y lo ocupa cuando esta disponible.</p>
+    
+
+    <ul class="proValue">
+        <li><span>200px</span> Tamano de la caja en el eje main</li>
+        
+    </ul>
+ 
+</body>
+</html>

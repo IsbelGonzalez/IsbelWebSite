@@ -1,0 +1,239 @@
+
+.etiq-style {
+
+    color:cornflowerblue;
+    
+    }
+
+.etiq-atrib {
+    color: coral;
+}
+
+/* EJEMPLOS FLOAT */
+div.ejm-float {
+    background-color: cadetblue;
+    padding: 5px;
+}
+
+div.ejm-float img {
+    float: right;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+}
+
+div.ejm-floatb {
+    background-color: cadetblue;
+    overflow: auto;
+    margin: 5px;
+    
+}
+
+div.avatar img{
+    width: 100%;
+    
+}
+.avatar { 
+    border: 2px solid fuchsia; 
+}
+.contenido {
+    float: right;
+    width: 62%;
+    border: 1px solid red;
+    background: transparent;
+     
+}
+
+div#float {
+    width: 400px;
+    background-color: cadetblue;
+    margin-top: 5px;
+    /* Esto hace q el parent vea los elementos flotantes */
+    overflow: auto;
+}
+
+div#float > div {
+    margin: 5px;
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    float: left;
+}
+
+
+/* CLEAR */
+
+div#cont {
+    background-color: rgb(124, 118, 118);
+    width: 400px;
+    /* min-height: 100px; */
+    
+}
+
+.fA {
+    background: green;
+    width: 300px;
+    height: 300px;
+    float: left;
+
+}
+
+.fB {
+    background: yellow;
+    width: 100px;
+    height: 400px;
+    float: right;
+}
+
+div#cont > div {
+    opacity: 0.4;
+
+}
+.clear {
+
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    clear: left;
+
+}
+
+.clearfix {
+/* Si se agregar al final de los div permiete que el contenedor  */
+    background-color:chartreuse;
+    height: 10px;
+    clear: both;
+
+}
+
+
+/* MICRO CLEAR FIX  esto hace q el contenedor cubra los elementos flotantes*/
+.cf:before, 
+.cf:after {
+    content:"";
+    display:tabel;
+}
+
+.cf:after {
+    clear:both;
+}
+
+.cf {
+    *zoom:1;
+}
+
+
+/* propiedad position */
+
+.divPosition {
+
+    background: red;
+    width: 100px;
+    height: 100px; 
+    position: relative; 
+    /* top: 10px; */
+    left: 50px;
+}
+
+.divPositionDos {
+    background: green;
+    width: 100px;
+    height: 100px; 
+    position: absolute;
+    right: 50px;
+}
+
+.divPositionTres {
+    background:fuchsia;
+    width: 100px;
+    height: 100px; 
+    position: static;
+    
+}
+
+.divPositionCuatro {
+    background:mediumslateblue;
+    width: 5px;
+    height: 400px; 
+    position: fixed;
+
+    bottom: 100px;
+    right: 10px;
+    z-index: 999;
+    
+}
+
+
+.divPositionCinco {
+    background:rgb(153, 225, 65);
+    width: 50px;
+    height: 50px; 
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    
+}
+
+
+#contenEjDisp {
+    width: 100%;
+    height: 200px;
+    /* Por defecto es block */
+    /* display: block;  */ 
+    background-color: gray;
+    border: 5px rebeccapurple solid;
+}
+#contenEjDisp div{
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    margin: 10px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 100px;
+    color: white;
+}
+
+#contenEjDispI {
+    width: 100%;
+    height: 100px;
+    /* Por defecto es block */
+    /* display: block;  */ 
+    background-color: gray;
+    border: 5px rebeccapurple solid;
+}
+
+#contenEjDispI div{
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    margin: 10px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 100px;
+    color: white;
+    display: inline;
+}
+
+#contenEjDispIB {
+    width: 100%;
+    height: 250px;
+    /* Por defecto es block */
+    /* display: block;  */ 
+    background-color: gray;
+    border: 5px rebeccapurple solid;
+}
+
+#contenEjDispIB div{
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    margin: 10px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 100px;
+    color: white;
+    display: inline-block;
+}

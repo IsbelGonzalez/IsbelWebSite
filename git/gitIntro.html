@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/git/gitIntro.css">
+    <link rel="stylesheet" href="/fontawesome/css/all.css">
+
+    <link rel="icon" href="/img/git/favicon.ico" rel="shortcut ico" type="image/x-ico">
+
+    
+
+    <title>Git Intro</title>
+</head>
+<body>
+
+    <main>
+
+        <header>
+            <h1 class="mlogo"><a href="/index.html"><i class="fa fa-jedi " ></i></a></h1>
+                <nav class="menu-content">
+                    <ul >
+                        <li><a href="/CarreraFE/start.html">Carrera Fron End</a></li>
+                        <li><a href="/htmlcssEsencial/htmlEsencial.html">HTML Esencial</a></li>
+                        <li><a href="/FlexBox/fbIntro.html">FlexBox</a></li>
+                        <li><a href="#">Java Scrip </a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="/git/gitIntro.html">Git</a></li>
+                        
+                    </ul>
+                </nav>
+        </header>   
+
+
+        <div class="items">
+        <article>
+
+            <h1><a href="https://git-scm.com/"><i class="fa fa-brands fa-git" ></i></a> GIT</h1>
+            <h1> GIT</h1>
+
+            <p>Sistemas distribuido de control de versiones (Distributed revision control system).</p>
+            <p>Creado por linus Torvalds (2005) y basado en ramas. Estas ramas pensadas para luego fusionarce y crear el proyecto final creando un version master (version de producion).</p>
+            <p><em>Esto es GIT rastrea el trabajo colaborativo en proyectos a travez de un hermoso modelo de arbol distribuido (branch-rama) de la teoria de grafos.</em></p>
+
+            <h2>Historia</h2>
+            <p>Antes de Git: </p>
+
+            <ul>
+                <li>CVS: Concurrent Version System (tortuga)</li>
+                <li>SVN: SubVersion</li>
+            </ul>
+
+            <h2>Estructura</h2>
+            <img src="/img/git/GitEstructura.png" alt="Estructura de Git">
+
+            <h2 id="branchInfo">Branch - Rama</h2>
+
+            <p>Permite desviarse de la linea principal de desarrollo.</p>
+            <p>El archivo HEAD es el que guarda la referencia a la rama actual. /.git/HEAD</p>
+            <img src="/img/git/GitRamas.png" alt="Estructura de Git">
+            <p>Las ramas apuntan a un commit. /.git/refs/heads/nombreRama  este archivo contiene el id del commit.</p>
+
+            <img src="/img/git/EstructuraRamasRepository.png" alt="Estructura de Git">
+
+            <h2>Conflictos</h2>
+
+            
+            <h3>branch rama-1 branch master   (cambios mismo archivo misma linea diferentes ramas)</h3>
+            <p>$git marge ramaConflicto  --> CONFLICT (</p>
+            <p>Se guardan los cambios dejando las lineas que el progrmador decida.</p>
+            <p>se agrega la modificacion $git add .</p> 
+            <p>se hace el commit  $git commit</p> 
+            <p>Tratar de usar git status y git  log entre cada paso para evitar confucion</p>
+            
+            
+
+
+
+
+
+            <h2>Git</h2>
+            <p>Sistema de Control de Verciones</p>
+
+            <h2>Git CHEAT SHEET</h2>
+            <p><a href="/img/git/git-cheat-sheet-Rebellabs-1536x1086.png">Git cheat sheet</a></p>
+
+            <h2>Git Curso Principiante</h2>
+
+            <h3>Curso en linea <a href="http://youtube.com" title="Youtube" id="listacurosgit"><i class="fa fa-brands fa-youtube " ></i></a></h3>
+            <ol>
+                <li><a target="_blank" href="/videos/git/01 - Git  Introducción y comandos básicos_360p.mp4">Introducción y comandos básicos</a> <a href="/git/gitPrincipiante.html#tbgitcomand">Comandos</a></li>
+                <li><a target="_blank" href="/videos/git/02 - Git  El comando git status_360p.mp4">El comando git status</a> <a href="/git/gitPrincipiante.html#tbgitcomand">Comandos</a></li>
+                <li><a target="_blank" href="/videos/git/03- Git  Trabajando con ramas_360p.mp4">Trabajando con ramas</a> <a href="/git/gitPrincipiante.html#tbgitcomand">Comandos Branch</a>  <a href="/git/gitIntro.html#branchInfo">Branch</a></li>
+                <li><a target="_blank" href="/videos/git/04 - Git  Solucionando conflictos_360p.mp4">Solucionando conflictos</a> <a href="/git/gitPrincipiante.html#tbgitcomand">Solucionando conflictos</a>  <a href="/git/gitIntro.html#branchInfo">Branch</a></li>
+                <li><a target="_blank" href="/videos/git/05 - Git  El archivo gitignore_360p.mp4">El archivo gitignore</a> <a href="/git/gitPrincipiante.html#gitIgnore">Archivo .gitignore</a> </li>
+            </ol>
+
+
+            <h2>Git Curso Avanzado</h2>
+
+        </article>
+
+        <article>
+
+            <h1><i class="fa-brands fa-github"></i> GitHub</h1>
+
+            <p>Sitio Web (Red Social de Codigo).</p>
+            <p>Opciones de repositorios privados gratis.</p>
+            <p>Interactivo con otros usuarios y se tiene un perfil de programador.</p>
+            <p>Perfil de usuario de programador: Aqui se tiene un modo exacto de ver que hace realmente un programador sus contribuciones al codigo, en que proyectos esta trabajado. Que organizaciones hace parte. Quien la sigue (followers). Estrella. Repositorios.</p>
+            <p>Empresa privada.</p>
+            <p>Propietario actual Microsoft.</p>
+
+            <h2>Pull Request:</h2>
+            <p>Importante invento que permite agregar aportaciones a un proyecto ya existente. Tenicamente sera un merge request ya que fucionas codigo.</p>
+
+            <h2>Teoria de desarrollo de Software</h2>
+
+            <img src="/img/git/DevOps.png" alt="Teoria de desarrollo de Software">
+
+
+            <h2>Empresas Dedicadas a alguna de las partes de DevOps</h2>
+
+            <img src="/img/git/EmpresasDedicadasDevOps.png" alt="Empresas y Dedicacion">
+
+            <h2>Teorias de desarrollo</h2>
+
+            <img src="/img/git/TeoriasDeDesarrolllo.png" alt="Empresas y Dedicacion">
+
+            <h2>DepOps Completo</h2>
+
+            <img src="/img/git/DepOpsCompleto.png" alt="Empresas y Dedicacion">
+
+
+            <h2>DepOps gitHub herramientas</h2>
+
+            <img src="/img/git/GitHubDepOps.png" alt="Herramientas GitHub">
+
+            <h2>GitHub Instalacion DepOps</h2>
+            <p>Solo se puede intalar en servidores de Microsoft Azure.</p>
+
+
+            <h2>Crear Repositorio</h2>
+            <ul>
+                <li>+Nuevo Repositorio: Nombre(El nombre del Directory).</li>
+                <li>Publico o Privado: Si es publico todos puede ver el Repositorio. Si es privado podemos agregar los usuarios que pueden ver el repositorio.</li>
+                <li>Se puede inicializar con un archivo. Omitir porq lo tenemos en local.</li>
+                <li>Creado se debe conigurar en la pantalla de gitHub aparecen las instruciones.</li>
+            </ul>
+
+            <h2>Configurar (create a new repository from de comand lien)</h2>
+            <p>Esta opcion es para crear desde cero en local.</p>
+
+            <h2>Configurar (push and existing repository from de commmand line)</h2>
+            <ul>
+                <li>git remote add origin http://github.com/isbelgonzalez/nombreRepositorio.git</li>
+                <li>git push -u origin master</li>
+            </ul>
+            
+
+            <h2>Configurar (import code from another repository)</h2>
+            <p>Continuar para ver las opciones</p>
+
+
+
+            
+
+            
+        </article>
+
+        <article>
+
+            <h1>GitLab</h1>
+
+            <p>Es opensource. Parecido a GitHub pero codigo abierto.</p>
+            <p>Menos populas que gitHub</p>
+
+            <p></p>
+
+            <h2>GitLab Instalacion DepOps</h2>
+            <p>Como es codigo open se peude instalar en cualquier servidor que no necesariamente en Microsoft.</p>
+
+            
+        </article>
+
+    </div>
+
+
+    </main>
+    
+</body>
+</html>

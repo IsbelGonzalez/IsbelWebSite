@@ -1,0 +1,26 @@
+h1 {
+    background-color: coral;
+    color: white;
+    border: 5px solid crimson;
+    font-style: oblique;
+    font-family: sans-serif;
+}
+
+h2 {
+
+    background-color: rgb(12, 175, 175);
+    color: white;
+    border: 5px solid blue;
+    font-style: oblique;
+    font-family: sans-serif;
+
+}
+
+.resaltar {
+    color:darkgoldenrod;
+    font-weight: bolder;
+}
+
+.cont{
+    background-color: lightskyblue;
+}

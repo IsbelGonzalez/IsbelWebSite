@@ -1,0 +1,72 @@
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+html {
+    /* Esta propiedad resta el border y el pading del Box Model teniendo With y heigt el total */
+    /* Si no se coloca cuando se agrega pading o border el tamano de la caja aumento */
+    /* El margen esta afuera esto no va dentro de la caja */
+    box-sizing: border-box;
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+}
+
+
+body{
+    background-color: lightgray;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+.contenedor {
+    margin: 5px;
+    border: 20px solid gray;
+    background-color:lightblue;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-01 {
+    border: 5px solid white;
+    background-color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+    width: 100%;
+    height: 20vh;
+    
+    align-self: flex-start;
+}
+
+.item-02 {
+
+    border: 5px solid mediumaquamarine;
+    background-color: mediumseagreen;
+    text-align: justify;
+
+    width: 60%;
+    height: 75vh;
+    
+    align-self:stretch;
+   
+}
+
+.item-03 {
+
+    background-color: aqua;
+    text-align: justify;
+
+    width: 40%;
+    
+    align-self:stretch;
+   
+}

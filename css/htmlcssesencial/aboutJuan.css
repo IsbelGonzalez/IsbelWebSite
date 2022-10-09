@@ -1,0 +1,131 @@
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-image: url(/img/aboutJuan/fondo768x320.jpg  );
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: table;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+#contenedor {
+    display: table-cell;
+    text-align: center;
+     vertical-align: middle;
+}
+
+
+.contenido {
+    width: 800px;
+    min-height: 400px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+}
+
+.columna-izquierda {
+    width: 25%;
+    float: left;
+
+}
+    .columna-izquierda > img {
+        max-width: 100%;
+        height: auto;
+    }
+    /* Elimina la lista y las bolitas de los ul */
+    .columna-izquierda ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+        /* Margen entre las columnas del list */
+        .columna-izquierda ul li{
+            margin: 10px 0;
+        }
+
+        .columna-izquierda ul li div{
+            width: 22px;
+            height: 22px;
+            display: inline-block;
+            margin-right: 5px;
+            vertical-align: middle;
+            background-image: url(/img/redes-sociales.png);
+
+        }
+
+        .columna-izquierda ul li:first-of-type div{
+            background-position: 0px -22px;
+
+        }
+        .columna-izquierda ul li:nth-child(2) div{
+            background-position: -174px -22px;
+
+        }
+
+        .columna-izquierda ul li:last-child div{
+            background-position: -88px -22px;
+
+        }
+        .columna-izquierda ul li a {
+            text-decoration: none;
+            color: black;
+        }
+.columna-derecha {
+    width: 70%;
+    float: right;
+
+}
+
+    .columna-derecha h1 {
+        margin: 0 0 5px 0;
+    }
+    .columna-derecha h2 {
+        margin-top: 0;
+    }
+    
+
+
+
+
+#proyectos {
+    min-height: 100px;
+    
+}
+    #proyectos ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    #proyectos ul li {
+        display: inline-block;
+        width: 156px;
+        height: 156px;
+        margin-right: 5px;
+    }
+
+    #proyectos ul li:last-of-type {
+        margin-right: 0px;
+    }
+
+    #proyectos h3{
+        text-align: center;
+    }
+
+/* Desarrollo */
+.brojo {
+    border: 1px dashed red;
+}
+
+
+.clearfix {
+    clear: both;
+}

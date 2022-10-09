@@ -1,0 +1,38 @@
+/* Todods los div que contengan la clase contenedor */
+div.contenedor {
+    width: 400px;
+    min-height: 200px;
+    background: rgb(165, 163, 163);
+    margin: 0 auto 0 auto;
+}
+
+div.cabecera {
+    background: gray;
+    height: 50px;
+}
+
+div.cabecera h1{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    line-height: 50px;
+}
+
+div.slider {
+    margin-top: 20px;
+    height: 100px;
+    background: red;
+
+}
+
+div.footer {
+     margin-top: 10px;
+     height: 50px;
+     background: black;
+     text-align: center;
+}
+
+div.footer p {
+    color: white;
+    line-height: 50px;
+}

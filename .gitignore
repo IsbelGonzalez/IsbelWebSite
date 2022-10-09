@@ -1,0 +1,10 @@
+# ignorar todos los archivos de videos.
+
+*.mp4
+/videos
+
+# Extencionesgit
+/fontawesome
+
+#Archivos
+.DS_Store

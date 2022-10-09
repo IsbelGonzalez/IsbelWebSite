@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/git/gitPrincipiante.css">
+    <link rel="stylesheet" href="/fontawesome/css/all.css">
+
+    <title>Git Principiante</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1 class="mlogo"><a href="/index.html"><i class="fa fa-jedi " ></i></a></h1>
+                <nav class="menu-content">
+                    <ul >
+                        <li><a href="/CarreraFE/start.html">Carrera Fron End</a></li>
+                        <li><a href="/htmlcssEsencial/htmlEsencial.html">HTML Esencial</a></li>
+                        <li><a href="/FlexBox/fbIntro.html">FlexBox</a></li>
+                        <li><a href="#">Java Scrip </a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="/git/gitIntro.html">Git</a></li>
+                        
+                    </ul>
+                </nav>
+        </header>   
+
+        <div class="items">
+            <article id="tbgitcomandos">
+                <h1>GIT Comandos</h1>
+                <h2>Comando principal</h2>
+
+               
+                    <table id="tbgitcomand">
+                        <tr>
+                          <th>Clasificacion</th>
+                          <th>Comando</th>
+                          <th>Descripcion</th>
+                        </tr>
+                        <tr>
+                          <td>Principal</td>
+                          <td>$git</td>
+                          <td>Muestra informacion de git</td>
+                        </tr>
+                        <tr>
+                          <td>Configuracion</td>
+                          <td>$git config -l</td>
+                          <td>Ver configuracion actual</td>
+                        </tr>
+                        <tr>
+                          <td>Configuracion</td>
+                          <td>$git config --globar user.name Isbel</td>
+                          <td>Configura el user name</td>
+                        </tr>
+                        <tr>
+                            <td>Configuracion</td>
+                            <td>$git config --globar user.email isbelgonzalez@gmail.com</td>
+                            <td>Configura el user email</td>
+                        </tr>
+                        <tr>
+                          <td>Configuracion</td>
+                          <td>$git init</td>
+                          <td>Crea la carpera oculta .git que contiene la informacion del repositorio.</td>
+                        </tr>
+                        <tr>
+                          <td>Staged-Index</td>
+                          <td>$git add .</td>
+                          <td>Agrega todos los archivos y carpetas en el directoria a</td>
+                        </tr>
+                        <tr>
+                          <td>Staged-Index</td>
+                          <td>$git add nombreArchivo1 archivo2 archivo3</td>
+                          <td>Agrega el archivo.</td>
+                        </tr>
+
+                        <tr>
+                          <td>Staged-Index</td>
+                          <td>$git reset HEAD nombreArchivo</td>
+                          <td>Se borra del Staging.</td>
+                        </tr>
+
+                        <tr>
+                          <td>Local-Repository</td>
+                          <td>$git commit -m "Escribe aqui el mensaje"</td>
+                          <td>Agrega el archivo "Local Repository".</td>
+                        </tr>
+                        <tr>
+                          <td>Informacion</td>
+                          <td>$git log</td>
+                          <td>Historial de commmit. (| wc -l) cuenta las lineas para saber cantidad de commits.</td>
+                        </tr>
+                        <tr>
+                          <td>Informacion</td>
+                          <td>$git log --oneline</td>
+                          <td>Historial de commmit compacto.</td>
+                        </tr>
+                        <tr>
+                          <td>Informacion</td>
+                          <td>$git log --oneline --graph --all</td>
+                          <td>Muestra la grafica del repositorio.</td>
+                        </tr>
+
+                        <tr>
+                          <td>Informacion</td>
+                          <td>$git show idCommit</td>
+                          <td>El id del comit pueden ser los 7primeros caracteres o el id completo. Muestra la informacion completa del commit especificado..</td>
+                        </tr>
+                        
+                        <tr>
+                          <td>Informacion</td>
+                          <td>$git status</td>
+                          <td>(branch) Rama actual, (Changes not staged) cambios realizado especificados, (Untraked files) archivos sin rastro sin trayectoria.</td>
+                        </tr>
+
+                        <tr>
+                          <td>Working-Directory</td>
+                          <td>$git diff</td>
+                          <td>Especifica las diferencias y modificaciones dentro del los archivos de texto. Solo Muestra los cambios que no estan en el Staging-Index.</td>
+                        </tr>
+
+                        <tr>
+                          <td>Staged-Index</td>
+                          <td>$git diff --staged</td>
+                          <td>Especifica las diferencias y modificaciones dentro del los archivos de texto. Solo Muestra los cambios en el Staging-Index.</td>
+                        </tr>
+
+                        <tr>
+                          <td>Working-Directory</td>
+                          <td>$git checkout -- nombreArchivo</td>
+                          <td>(Discart changes y working Directory )Elimina las modificaciones en el Directory y mantiene el archivo de Staged.</td>
+                        </tr>
+
+                        <tr>
+                          <td>Branch</td>
+                          <td>$git branch</td>
+                          <td>Lista de las ramas existentes del repositorio. La rama actual esta senalada con (*)</td>
+                        </tr>
+
+                        <tr>
+                          <td>Branch</td>
+                          <td>$git branch nombreRama</td>
+                          <td>Crea una rama nueva.</td>
+                        </tr>
+
+                        <tr>
+                          <td>Branch</td>
+                          <td>$git checkout nombreRama</td>
+                          <td>Se ubica en la rama. Switched to branch nombreRama</td>
+                        </tr>
+
+                        <tr>
+                          <td>Branch</td>
+                          <td>$git checkout -b nombreRama</td>
+                          <td>Crea y Se ubica en la rama. Switched to a new branch nombreRama</td>
+                        </tr>
+
+                        <tr>
+                          <td>Branch</td>
+                          <td>$git branch -n nuevoNombreRama</td>
+                          <td>Cambia el nombre de la rama.</td>
+                        </tr>
+
+                        <tr>
+                          <td>Branch - merge</td>
+                          <td>$git merge nombreRama</td>
+                          <td>Integra la rama. Para salir del comentario escape  :wq</td>
+                        </tr>
+                        <tr>
+                          <td>Branch - info</td>
+                          <td>$git log --oneline --graph --all</td>
+                          <td>Muestra la grafica del repositorio. oneline (una linea) grapg (grafico) all (todas las ramas)</td>
+                        </tr>
+
+                        <tr>
+                          <td>Branch - delete</td>
+                          <td>$git branch -d nombreRama</td>
+                          <td>Borra la rama. Las ramas no se pueden borrar si hay commits pendientes o si estamos ubicados en la rama.</td>
+                        </tr>
+
+                        <tr>
+                          <td>Branch - delete</td>
+                          <td>$git branch -D nombreRama</td>
+                          <td>Borra la rama ignorando los commit pendientes no recomendado para no perder la referencia a los commit.</td>
+                        </tr>
+
+                        <tr>
+                          <td>Branch</td>
+                          <td>$git rebase master</td>
+                          <td>El head debe estar en la rama que se desea integrar al branch master.
+                            Se solucionan los conflictos si existen. Luego (git status). Luego (git add .). Luego (git rebase --continue).  Luego se debe actualizar el master con un merge al nuevo commit. (git checkout master) (git merge ramaAgregada) con esto se hace el Fast-forward y no se crea un merge commit innecesario.</td>
+                        </tr>
+
+                        <tr>
+                          <td>(Staging revertir) Staging -reset-> Untracked</td>
+                          <td>$git reset HEAD nombreArchivo</td>
+                          <td>{Directory-Untracked -add-> Staging-Staged} revertimos {Staging-Staged -reset-> Directory-Untracked}. Revertir cambios sobre el Staging-Index cuando los archivos estaban en el directorio.</td>
+                        </tr>
+                        <tr>
+                          <td>(Staging revertir) Staged -reset-> Modified </td>
+                          <td>$git reset HEAD nombreArchivo</td>
+                          <td>{Repository-Modified -add-> Staging-Staged} revertimos {Staging-Staged -reset-> Repository-Modified}. Revertir cambios sobre el Staging-Index cuando los archivos ya estan en un commit.</td>
+                        </tr>
+                        <tr>
+                          <td>(Repository revertir) Modified-cheackout->Unmodified  </td>
+                          <td>$git checkout -- nombreArchivo</td>
+                          <td>{Repository-Unmofified -editar-> Repository-Modified} revertimos {Repository-Modified -checkout-> Repository-Unmodified} Para revertir cambios y dejar como estaba en el ultimo commit.</td>
+                        </tr>
+
+                        <tr>
+                          <td>Remote - Configuracion</td>
+                          <td>$git remote add origin https://github.com/isbelgonzalez/directoryLocal.git</td>
+                          <td>Se configura el repositorio remoto (nombre - origin) donde esta en la nuve el repositorio remoto. (gitHub)</td>
+                        </tr>
+
+                        <tr>
+                          <td>Remote - Consult</td>
+                          <td>$git remote  origin -v</td>
+                          <td>Consulta si existe y se ven las url configuradas. </td>
+                        </tr>
+
+                        <tr>
+                          <td>Remote - push</td>
+                          <td>$git push -u origin master </td>
+                          <td>Envia todos los archivos al repositorio remoto el -u solo es una vez que enlasa la rama con el remoto(origi)</td>
+                        </tr>
+
+                        <tr>
+                          <td>Remote - push</td>
+                          <td>$git push -u origin rama-1 </td>
+                          <td>Subir una rama especifica.</td>
+                        </tr>
+
+                        <tr>
+                          <td>Remote - push</td>
+                          <td>$git push  </td>
+                          <td>Para subir los commits.</td>
+                        </tr>
+
+                        <tr>
+                          <td>Remote - clone</td>
+                          <td>$git clone https://github.com/isbelgonzalez/nombreRepositorio.git  </td>
+                          <td>Clonar un repositorio. Se debe ubicar el pront en la carpeta madre el creara una carpeta con el nombre del repositorio. Ya con esto esta configurado el repositorio remoto apuntando a origin usar (git remote) (git remote -v) .</td>
+                        </tr>
+
+                        <tr>
+                          <td>Remote - fetch</td>
+                          <td>$git fetch origin </td>
+                          <td>Revisa si hay cambios en el repositorio remoto(origin).</td>
+                        </tr>
+
+                        <tr>
+                          <td>Remote -Branch cheackot</td>
+                          <td>$git checkort nombreRama </td>
+                          <td>Descargar una rama del repositorio remoto.</td>
+                        </tr>
+
+                      </table>
+                
+               
+               
+            </article>
+
+            <div class="items">
+              <article>
+                  <h1>GIT Archivos</h1>
+                  <h2>Estados de los archivos (cambios)</h2>
+
+
+                  <figure>
+                    <img src="/img/git/ArchivosEstados.png" alt="Estado de los archivos">
+                    <figcaption>
+                      <ul>
+                        <li><strong>Untraked (Working-Directory):</strong> (Sin rastro, huella) Aun no se le esta haciendo seguimiento en GIt.</li>
+                        <li><strong>Sataged (Staging-Index):</strong> (En el esenario, indice) Esta en el indice (add).</li>
+                        <li><strong>Unmodified (Local-Repository):</strong> (En el repositorio local) Se encuentra sin modificaciones en el repositorio local (commit).</li>
+                        <li><strong>Modified (Local-Repository):</strong> (En el repositorio local) Se han echo modificaciones pero no se han guardado en el repositorio se debe hacer git add para pasar las modificaciones al indice.</li>
+                      </ul>
+                    </figcaption>
+                </figure>
+                  
+
+                  
+              </article>
+
+              <article id="gitIgnore">
+
+                <h1>Archivo .gitignore</h1>
+                <p>En este archivo se agregar los nombres de los archivos que se quieren ignorar para que el repositorio no los tome en cuenta. Tambein se pueden escribir patrones para ignorar varios archivos.</p>
+                 <ul>
+                  <li>nombreArchivo.ext: Se ignoran todos los archivos con este nombre incluidos los que esten en subcarpetas.</li>
+                  <li>/nombreArchivo.ext: Se ignoran solo el archivo a nivel de la raiz.</li>
+                  <li>carpeta: Se ignoran la carpeta completa que tenga este nombre y las sub carpetas con el nombre indicado.</li>
+                  <li>/carpeta: Se ignoran la carpeta que inicie en la raiz y todas su carpetas internas y sus archivos.</li>
+                  <li>*.log: Todos los archivos con extencion .log.</li>
+                  <li>#: Signo para crear comentarios.</li>
+                 </ul>
+
+                 <p>En gitHub hay plantillas de este tipo de archivo para todos los casos posibles como C# o proyectos especificos. <a href="http://github.com/github/gitignore">gitHub templates</a></p>
+              </article>
+            </div>
+
+                
+            <article>
+                
+                <h2>TERMINAL: Comandos necesarios y basicos del terminal</h2>
+
+               
+                    <table id="tbterminalcoman">
+                        <tr>
+                          <th>Terminla</th>
+                          <th>Comando</th>
+                          <th>Descripcion</th>
+                        </tr>
+                        <tr>
+                          <td>System File</td>
+                          <td>$cd nombreCarpeta/</td>
+                          <td>El terminal se ubica en la carpeta.</td>
+                        </tr>
+                        <tr>
+                            <td>System File</td>
+                            <td>$cd ..</td>
+                            <td>El terminal se ubica en la carpeta madre (regreso).</td>
+                          </tr>
+                        <tr>
+                          <td>Listar</td>
+                          <td>$ls</td>
+                          <td>Lista los objetos dentro de la carpeta actual.</td>
+                        </tr>
+                        <tr>
+                          <td>Listar</td>
+                          <td>$ls -al</td>
+                          <td>Lista todas las carpetas y archivos ocultos.</td>
+                        </tr>
+                        <tr>
+                            <td>Borrar</td>
+                            <td>$rm -rf nombreCarpeta</td>
+                            <td>Borra la carpeta.</td>
+                        </tr>
+                        <tr>
+                          <td>Ver</td>
+                          <td>$cat nombreArchivo</td>
+                          <td>Muestra el contenido del arcgivo de texto.</td>
+                        </tr>
+
+                        <tr>
+                          <td>pront</td>
+                          <td>q</td>
+                          <td>Volver al pront cuando se encuentra dentro de alguna vista y salir.</td>
+                        </tr>
+
+                        <tr>
+                          <td>Union</td>
+                          <td>|</td>
+                          <td>Con este caracter permite unir varios comandos. | wc -l</td>
+                        </tr>
+
+                        <tr>
+                          <td>Borrar carpeta</td>
+                          <td>rm -rf carpeta/</td>
+                          <td>Se debe estar en el directorio padre de la carpeta a borrar.</td>
+                        </tr>
+                        
+                      </table>
+                
+                
+            </article>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,51 @@
+
+article#practicaCuatro {
+    background-color: lightyellow;
+    padding: 20px;
+}
+
+article#practicaCuatro h1 {
+    color: gray;
+}
+
+
+article#practicaCuatro h2 {
+    color: lightgray;
+}
+
+article#practicaCuatro li{
+
+    font-size: 26px;
+}
+
+article#practicaCuatro ul li:first-child {
+   
+    font-weight: bold;
+}
+
+article#practicaCuatro ul li:last-child {
+   
+    font-weight: bold;
+}
+
+/* Practica Trece */
+
+header nav{
+    margin: 20px;
+}
+
+#principal section p {
+    line-height: 20px;
+}
+
+h3.destacado a{
+    color: gray;
+}
+
+footer nav.legal a{
+    text-decoration: none;
+}
+
+#mensaje p.destacado.final {
+    font-weight: bolder;
+}

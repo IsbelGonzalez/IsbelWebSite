@@ -1,0 +1,415 @@
+
+/* SELECTORES DE ETIQUETAS */
+
+/* seudo Clase de posicion  */
+h1:first-of-type {
+    font-weight: 3rem;
+    text-decoration: bold;
+    color: rgb(255, 0, 195);
+}
+
+/* COLORES HEXADECIMALES */
+/* RED GREAN BLUE , HEXA BASE 16, 255,255,255 0,1,2,3,4,..A10 B11 C12 D13 E14 F15 */
+
+/* Aplicar a selector h1 */
+h1 {
+    font-weight: 3rem;
+    text-decoration: bold;
+    color: #FF0000;
+    background-color: bisque;
+}
+
+h2 {
+    font-weight: 3rem;
+    text-decoration: bold;
+    color: rgba(255, 68, 0, 0.547);
+    text-decoration-line: underline;
+    background-color: lightgrey;
+}
+
+h3 {
+    font-weight: 3rem;
+    text-decoration: bold;
+    color: white;
+    text-decoration-line: underline;
+    background-color: coral;
+    
+}
+
+h4 {
+    font-weight: 3rem;
+    text-decoration: bold;
+    color: rgba(183, 0, 255, 0.706);
+    text-decoration-line: underline;
+}
+
+h5 {
+    font-weight: 3rem;
+    text-decoration: bold;
+    color: rgb(63, 97, 234);
+    text-decoration-line: underline;
+}
+
+p {
+    color: gray;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+span {
+    font-weight: 3rem;
+    /* text-decoration:line-through; */
+}
+
+/* Relacion Gerarquica */
+ol li {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+}
+
+/* Seudo Clase de Estado */
+ol li:hover{
+    color: darkturquoise;
+    font-size: 20px;
+}
+
+ul li {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    
+    
+}
+ul li:hover{
+    color: #00ced1;
+    font-size: 10px;
+
+}
+
+/* Aplicacion Gerarquica */
+ul li a{
+    color: rgb(27, 194, 27);
+}
+
+/* Seudo clase de Relacion Especifica */
+div:not(.destacado){
+    color:turquoise
+}
+
+
+/* CLASES */
+
+
+/* DEFINICION CLASE */
+.resaltador {
+    color: lawngreen;
+}
+
+/* CLASE DENTRO DE ETIQUETA */
+
+ul .resaltador{
+    color: palevioletred;
+}
+
+/* HERENCIA todos los li heredan la clase de ul */
+ul.colorheredado li{
+    color: greenyellow;
+}
+
+h1.comb span.combb {
+    color: coral;
+}
+
+span.atrib {
+    color: brown;
+
+}
+
+span.etiq {
+    color: cornflowerblue;
+
+}
+
+
+h1.boxmodel {
+    background-color:cadetblue;
+   
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+
+    border: 10px solid darkgoldenrod;
+    padding: 10px;/* solid mediumaquamarine; */
+    /* margin-top:  10px solid rgb(184, 11, 37); */
+
+    
+}
+
+img {
+    padding: 10px;
+    border: 1px solid #FF0000;
+    background: gray;
+    margin: 10px;
+    width: 200px;
+    height: auto;
+
+    /* display: block; */
+
+
+}
+
+div.imgFondo {
+    width: 200px;
+    height: 200px;
+    border: 1px dotted red;
+    background-image: url(/img/quote.gif);
+    /* Si la imagen no carga  */
+    background-color: gray;
+    /* Repite la imagen para llenar el espacio completo repeart default, repeat-x, repeat-y, no-repeat */
+    background-repeat: repeat-y;
+
+    /* Primero posicon Y top center botton*/
+    /* posicio eje X left center right*/
+    background-position: bottom right;
+
+}
+
+
+/* Selectores id ls ides deben ser unicas */
+
+#selectoridejm {
+    background-color: gray;
+    /* position: fixed; */
+}
+
+h5#selectoridelemnto {
+    color: crimson;
+    text-align: justify;
+    text-decoration: dashed;
+    text-decoration-line: blink;
+}
+
+
+/* EJEMPLOS DE CASCADA */
+.nivel {
+    color: darkgoldenrod !important;
+}
+
+
+/* CASCADA DENTRO DEL MISMO DOC */
+.niveldoc{
+    color: #FF0000;
+}
+
+
+.niveldoc{
+    color: blue;
+    font-weight: bold;
+}
+
+/* Para el ejemplo de especificidad */
+
+.ejEspecifi {
+    color: red;
+
+}
+
+#ejEspecifi {
+    color: blue;
+    
+}
+
+.mini-cuadro{
+    /* width: 400px; */
+    background-color: gray;
+    display: inline;
+    border: 2px solid black;
+
+   
+    
+}
+
+
+/* EJEMPLOS */
+
+/* Seudo Clase de estado (hover) */
+a#ejmSCEstado:hover{
+    color: rgb(0, 255, 89);
+    font-weight: bolder;
+}
+
+
+/* Seudo Clase de estado (focus)*/
+input#ejmSCEstadof:focus{
+    color: rgb(7, 80, 32);
+    font-weight: bolder;
+    background-color: yellow;
+    padding: 21px;
+}
+
+a#ejmSCEstadoA:active{
+    color: yellow;
+    font-weight: bolder;
+}
+
+a#ejmSCEstadoV:visited{
+    color: green;
+    font-weight: bolder;
+}
+
+/* Cualquier ocurrencia del primer tipo que consiga dentro del div */
+div#ejmSCPosition :first-of-type {
+
+    color: purple;
+    font-weight: bolder;
+
+}
+
+
+/* Solo sos span */
+
+div#ejmSCPosition span:first-of-type {
+
+    color: greenyellow;
+    font-weight: bolder;
+
+}
+
+
+
+
+div#ejmSCPositionfc :first-child{
+
+    color: olive;
+    font-weight: bolder;
+
+}
+
+
+
+div#ejmSCPositionoc span:only-child{
+
+    color: olive;
+    font-weight: bolder;
+
+}
+
+
+div#ejmSCPositionoc p:nth-child(even){
+
+    color: olive;
+    font-weight: bolder;
+
+}
+
+
+
+div#fnth span , 
+div#snth span , 
+div#tnth span,
+div#fnth em,
+div#snth em,
+div#tnth em {
+    padding: 5px;
+    border: 1px solid green;
+    display: inline-block;
+    margin-bottom: 3px;
+  }
+
+.first span:nth-child(2n+1),
+.second span:nth-child(2n+1),
+.third span:nth-of-type(2n+1) {
+  background-color: lime;
+}
+
+
+#ejmSCRelacion :not(.dest){
+    text-decoration: underline;
+    font-weight: bolder;
+    color: lightsalmon;
+}
+
+
+
+p#ejmSE::first-line {
+    color: crimson;
+}
+
+p#ejmSE::first-letter{
+    font-style: italic;
+    color: green;
+    font-size: 40px;
+}
+
+p#ejmSE_B::before{
+    content: "texto introducido con before";
+    margin-right: 10px;
+    color: darkorange;
+
+}
+
+
+p#ejmSE_B::after{
+    content: "texto introducido con after";
+    margin-left: 10px;
+    color:salmon;
+
+}
+
+
+section#speudoe ul{
+    list-style-type: none;
+}
+
+section#speudoe li::after{
+    content: " 🐥 after";
+    margin: 20px;
+}
+
+
+section#speudoe li::before{
+    content: "🐙 before";
+    margin: 20px;
+}
+
+#ejmSE_marker li::marker {
+   color: red;
+   font-size: 28px;
+    
+}
+
+#ejmSE_marker li::selection {
+    color: red;
+    background-color: yellow;
+     
+ }  
+
+/* Selectores desendientes */
+/* selectTagPadre selectTagHijo {} */
+#ejeDesc article nav{
+    background-color: lightcoral;
+    border: 2px solid red;
+    display: inline;
+    margin-left: 10px;
+}
+
+
+#ejeDesc article p.segD.negrita{
+    background-color: lightskyblue;
+    border: 2px solid blue;
+    display: inline;
+    margin-left: 10px;
+}
+
+/* selectClassAbue selectTagPadre selecIDtHijo */
+.ejemDesc article #ePN {
+    background-color: yellow;
+    border: 2px solid orangered;
+    display: inline;
+    margin-left: 10px;
+}
+
+section.ejemDesc article nav{
+    background-color: lightcoral;
+    border: 2px solid red;
+    display: inline;
+    margin-left: 10px;
+}
+ 

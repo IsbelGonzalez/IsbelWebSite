@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/htmlcssesencial/htmlEsencial.css" media="screen"/>
+    <title>HTML y CSS Esencial -ISBEL</title>
+    <style type="text/css">
+        /* CSS en el HTML*/
+        h6 {
+            color: red;
+        }
+
+        .nivel {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Curso HTML y CSS Esencial</h1>
+    <p>En este documento se presenta el curso completo de Juan WMedia poniendo en practica todo lo aprendido.
+        Tendremos una serie de videos que seguiremos para realizar el curos.
+
+    </p>
+
+    <!-- <h6>HOLA</h6> -->
+    <h2>VIDEOS</h2>
+
+    <ol>
+        <li> <a href="../CSS Esencial 1  Que es HTML_360p.mp4" target="_blank">HTML y CSS Esencial 1  Que es HTML</a> </li>
+        <li><a href="../HTML y CSS Esencial 2  Hiperenlaces_360p.mp4" target="_blank">HTML y CSS Esencial 2  Hiperenlaces</a> </li>
+        <li><a href="../HTML y CSS Esencial 3  Que es CSS_360p.mp4">HTML y CSS Esencial 3  Que es CSS</a></li>
+        <li><a href="../HTML y CSS Esencial 4   Uniendo HTML y CSS_360p.mp4">HTML y CSS Esencial 4   Uniendo HTML</a></li>
+        <li><a href="../HTML y CSS Esencial 5  Colores hexadecimales_360p.mp4">HTML y CSS Esencial 5  Colores hexadecimales</a></li>
+        <li><a href="../HTML y CSS Esencial 6  Selectores de clase CSS_360p.mp4">HTML y CSS Esencial 6  Selectores de clase</a></li>
+        <li><a href="../HTML y CSS Esencial 7  El modelo de caja boxmodel_360p.mp4">HTML y CSS Esencial 7  El modelo de caja boxmodel</a></li>
+        <li><a href="../HTML y CSS Esencial 8  Elementos DIV_360p.mp4">HTML y CSS Esencial 8  Elementos DIV</a></li>
+        <li><a href="../HTML y CSS Esencial 9  Uso de imágenes_360p.mp4">HTML y CSS Esencial 9  Uso de imágenes</a></li>
+        <li><a href="../HTML y CSS Esencial 10  Imágenes de fondo_360p.mp4">HTML y CSS Esencial 10  Imágenes de fondo</a></li>
+        <li><a href="../ HTML y CSS Esencial 11  Uso de tipografía_360p.mp4">HTML y CSS Esencial 11  Uso de tipografía</a></li>
+        <li><a href="../HTML y CSS Esencial 12  Formularios_360p.mp4">HTML y CSS Esencial 12  Formularios</a></li>
+        <li><a href="../HTML y CSS Esencial 13  Ejercicio nº 1_360p.mp4.webm">HTML y CSS Esencial 13  Ejercicio nº 1</a></li>
+        <li><a href="../HTML y CSS Esencial 14  La cascada_360p.mp4">HTML y CSS Esencial 14  La cascada</a></li>
+        <li><a href="../HTML y CSS Esencial 15  Elementos flotantes_360p.mp4">HTML y CSS Esencial 15  Elementos flotantes</a></li>
+        <li><a href="../HTML y CSS Esencial 16  Float y clear_360p.mp4">HTML y CSS Esencial 16  Float y clear</a></li>
+        <li><a href="../HTML y CSS Esencial 17   Herencia_360p.mp4">HTML y CSS Esencial 17   Herencia</a></li>
+        <li><a href="../HTML y CSS Esencial 18  Especificidad_360p.mp4">HTML y CSS Esencial 18  Especificidad</a></li>
+        <li><a href="../HTML y CSS Esencial 19  Overflow desbordamiento_360p.mp4">HTML y CSS Esencial 19  Overflow desbordamiento</a></li>
+        <li><a href="../HTML y CSS Esencial 20  Position_360p.mp4">HTML y CSS Esencial 20  Position</a></li>
+        <li><a href="../HTML y CSS Esencial 21  ZIndex_360p.mp4">HTML y CSS Esencial 21  ZIndex</a></li>
+        <li><a href="../HTML y CSS Esencial 22  Display_360p.mp4">HTML y CSS Esencial 22  Display_360p</a></li>
+        <li><a href="../HTML y CSS Esencial 23  Encapsulamiento e independencia_360p.mp4">HTML y CSS Esencial 23  Encapsulamiento e independencia</a></li>
+        <li><a href="../HTML y CSS Esencial 24  Colapso de margenes_360p.mp4">HTML y CSS Esencial 24  Colapso de margenes</a></li>
+        <li><a href="../y2mate.com - HTML y CSS Esencial 25  Mejores practicas con imagenes_360p.mp4">HTML y CSS Esencial 25  Mejores practicas con imagenes</a></li>
+        <li><a href="../HTML y CSS Esencial 26  Sprites_360p.mp4.webm">HTML y CSS Esencial 26  Sprites</a></li>
+        <li><a href="../HTML y CSS Esencial 27  Pseudo clases_360p.mp4">HTML y CSS Esencial 27  Pseudo clases</a></li>
+        <li><a href="../ HTML y CSS Esencial 28  nthchild_360p.mp4">HTML y CSS Esencial 28  nthchild</a></li>
+        <li><a href="../HTML y CSS Esencial 29  Pseudo elementos_360p.mp4">HTML y CSS Esencial 29  Pseudo elementos</a></li>
+        <li><a href="../HTML y CSS Esencial 30  Ejercicio final_360p.mp4">HTML y CSS Esencial 30  Ejercicio final_360p</a></li>
+        <li><a href="../HTML y CSS Esencial 31  Ejercicio final resuelto_360p.mp4.mp4">HTML y CSS Esencial 31  Ejercicio final resuelto</a></li>
+        
+        
+       
+        
+    </ol>
+
+    <h1 id="htmlEsencial">Que es HTML</h2>
+    <p>HiperText Markup Language</p>
+    <p>Es un lenguaje estructurados de etiquetas (tags) jerarquizadas creador Tim Berner-Lee. Cientifico computacion britanico</p>
+    <p>Permite distribur de forma ordenada los datos de la paguina con una estructura.  </p>
+
+    <p>La forma que se expresan las etiquetas es de forma jerarquica. Hay unas dentro de otras y esta jerarquia es importate por que tiene sus relaciones que tambien sirve para el css ademas de la estructura</p>
+
+    <p>Los tags de html contienen dentro atributos que permiten configurar las caracteristicas de cada etiqueta.</p>
+
+    
+ 
+    <h2 id="htmlEtiquetas">ETIQUETAS (tags-markup)</h2>
+
+    <h3 >Cabecera</h3>
+
+    <h5 class="etiq">DOCTYPE: Tipo de documeto, la vercion html5 es !DOCTYPE html  esta etiqueta no tiene cierre por q no tiene contenido</h3>
+    <h5 class="etiq-org">html: organizacion inicia y termina el documento.</h3>
+    <h5 class="etiq-org">head: cualquier dependencia que necesita tu pagina Web.</h2>
+    <p>Etiqueta de organizacion. Se carga antes del body aqui se descargan los recursos necesarios para usar en el body. Y se colocan configuraciones.</p>
+    <p>Aqui se describe el documento  y todos los recursos necesarios para contruir la pagina.</p>
+    <h5 class="etiq">meta: (html-head)</h2>
+    <h5 class="etiq">title: (html-head-title)</h2>
+    <p>Titulo de la pagina mostrado en la pestana superior.</p>
+    <h5 class="etiq-org">body: (html-body) organizacion.</h2>
+    <p>Se debe agregar las partes visibles de la pagina.</p>
+
+
+    <h3>Textos</h3>
+
+    <h5 class="etiq-cont">h1: (html-body-h1, h2, h3, ...) contenido-heading</h2>
+    <p>Etiqueta de contenido heading de primer nivel de mayor importancia semantica. Como titulos.</p>
+    <p>Son importante agregar los heading para los motores de busqueda se pueden agregar palabras importantes que den importancia a tu paguina cuando los motores de busqueda automaticos revicen.</p>
+    <h5 class="etiq-cont">p: (html-body-p) contenido-parrafo</h2>
+    <p>Un parrafo con texto.</p> 
+    <p>Un parrafo por defecto tiene margen superir inferior y es tipo bloque</p>   
+    <h5 class="etiq-cont">ul-li: (html-body-ul-li) unorderList</h2>
+    <p>Lista desordenada. Los elemento se agregan con li</p>
+    <h5 class="etiq-cont">ol-li: (html-body-ol-li) orderList</h5>
+    <p>Lista ordenada (numerada). Los elemento se agregan con li</p>
+    <h5 class="etiq-cont">span: (html-body-) Delimitador inline</h5>
+    <p>Fluye con los elementos de bloque y permite agregar texto delimitado mediante este tag. Este texto agregado entre otros textos se puede resaltar mediante css.</p>
+    <h5 class="etiq-cont">br: (html-body-) Salto de linea</h5>
+    <p>Agrega un salto de linea (retorno de carro). Util para separar elemetos inline. no tiene tag de cierre ya que no es elemento de contenido.</p>
+    <a href="">HOLA</a><br><a href="">MUNDO</a>
+
+
+
+    <h3 id="htmlEnlaces">Enlaces</h3>
+    <h5 class="etiq-cont">a: (html-body-a) hiperlink</h2>
+    <p>hiper enlaces etiqueta anchor (ancla) es una estructura para conectar recursos tanto internos como externos.</p>
+    <h6 class="cont">Texto con el nombre del enlace generalmente subrayado en azul.</h6>
+    <h6 class="atrib">href: Referencia del enlace.Destino. Absoluta (enlace completo http), Relativa (dentro del servidor ./) # para ninguno. (URL: Localizador uniforme de recurso.)</h6>
+    <samp>URL:Localizador uniforme de recurso. Servidor. carpetas recurso. Es un texto unico en la Web que Identifica un recurso en la Web. </samp>
+    <p>Los enlaces se pueden realizar a la misma paguina usando un id #id dentro del atributo href. Al inicio #top final #end</p>
+    <h6 class="atrib">target: Especifica la ventana que se abre o si es la misma ventana oun iframe. Default _self, _blank, </h6>
+
+    <p>Absolutos: Con la url completa con el protocolo.</p>
+    <p>Relativo: La url es un recurso dentro del servidor modo de carpetas /carpeta/carpeta. La barra/ indica que lo q esta a la derecha esta dentro de lo q esta a la izq. Asi se recorren los directorios.</p>
+    <p>Desde Fuera hacia dentro (/): Cuando el enlace es relativo no es necesario agregar el origen porq esta de mas. /carpeta/carpeta/recurso.ext</p>
+    <p>Desde dentro a fuera: (../) de esta manera se sale se regresa en directorios. ../../../recurso.ext</p>
+            
+                <ul>
+                    <li>Texto <a href="http://wmedia.es/aprendiendo-a-decir-no/" target="_blank">Wmedia Artuculo</a></li>
+                    <li>Imagenes: <a href="/img/Cosmos.jpg" target="_blank">Cosmos</a></li>
+                    <li>Videos:  <a href="/video/HTML y CSS Esencial 2  Hiperenlaces_360p.mp4" target="_blank">HTML y CSS Esencial 2  Hiperenlaces</a></li>
+                    <li>top <a href="#top">Inicio de la paguina</a></li>
+                </ul>
+ 
+          
+    <h3>Multimedia</h3>
+    <h4 id="htmlImagenes">IMAGENES</h4>
+
+    <h5 class="etiq-cont">img: (html-body-img)  <span class="atrib"> src, alt, width, height</span>  </h5>
+
+    <p>fuente (url, ) src ="/img.jpg" (enlace absoluto o relativo)</p>
+    <p>Texto alternativo para lectores de pagina  alt ="xxx". Lectores de Web para invidentes leen el alt. Cuando la imagen no se encuentra se muestra el texto alternativo.</p>
+    <p>Cambia el tamano de la imagen con width height, Bueno cambiar solo una para que el navegador cambie la otra proporcionalemente y no deforme la imagen.</p> 
+    
+
+    <p>No hace falta cerrar no hay ningun contenido, es de nivel inline, tiene acceso a todos los elementos del modelo de caja</p>
+
+    <h3>EJEMPLO  <img src="/img/Cosmos.jpg" alt="Constelacion" ></h3>
+
+    <p><span class="nota">Paginas auto generadas para pruebas <a href="http://lorempixel.com">lorenpixel.cm</a></span></p>
+
+    <h5>Imagen de fondo (layaut) <span class="atrib"> background-image</span></h5>
+
+    
+    <h3>EJEMPLO  </h3>
+    <div class="imgFondo">
+          
+    </div>
+
+    
+    
+    <p><span class="nota">Fotos de fondo  <a href="https://place-hold.it/" target="_blank">https://place-hold.it/</a></span></p>
+    <p>Fotos de gatos: <a href="https://palcekitten.com" target="_blank">Imagenes de gatos</a>  https://palcekitten.com/400/400</p>
+
+    <p><a href="https://chrome.google.com/webstore/detail/placeholdit/pkobogjmmhkkkhjjljmjnfdbaeejlakc?hl=en-GB"></a></p>
+
+    
+
+    <h5 class="etiq-cont">figure & figcaption figcaption: (html-body-figure-figcaption)  <span class="atrib"> </span>  </h5>
+
+    <p>Es una imagen acompanada con un texto. Y se crea como un conjunto.</p>
+
+    <figure style="border: 5px solid rgb(0, 255, 4) ;">
+        <img src="/img/Cosmos.jpg" alt="">
+        <figcaption>La vida es bella. Este es un ejemplo de figure y figcaptio</figcaption>
+    </figure>
+
+    <figure>
+        <p style="white-space:pre">
+      Bid me discourse, I will enchant thine ear,
+        Or like a fairy trip upon the green,
+      Or, like a nymph, with long dishevelled hair,
+        Dance on the sands, and yet no footing seen:
+      Love is a spirit all compact of fire,
+        Not gross to sink, but light, and will aspire.</p>
+        <figcaption><cite>Venus and Adonis</cite>,
+          by William Shakespeare</figcaption>
+    </figure>
+
+    <h3 id="htmlSemantica">Semantica</h3>
+    <h5 class="etiq-cont">section: (html-body-)  <span class="atrib"> </span>  </h5>
+
+    <p>Se usa para agrupar contenido relacionado por su naturaleza o por su tematica.</p>
+
+    <p>Ejemplo de section</p>
+    <section id="sectioAni" style="background-color: rgb(82, 140, 207);">
+        <h1>Animales fantasticos</h1>
+        <h2>Elefantes</h2>
+        <p>Los elefantes son Afticanos y asiaticos.</p>
+        <h2>Jirafas</h2>
+        <p>Las jirafas tienen cuellos muy largos aunq las vertebras son las mismas.</p>
+    </section>
+
+
+    <h5 class="etiq-cont">header: (html-body-)  <span class="atrib"> </span>  </h5>
+    <p>Es la cabecera aunque no necesariamente esta en el inicio, pero si tiene que tener un sentido de cabecera su contenido.</p>
+    <p>Pueden existir varios heder dependiendo de su significado y estar dentro de otros tags</p>
+
+    <h5 class="etiq-cont">footer: (html-body-)  <span class="atrib"> </span>  </h5>
+    <p>Igual que el anterior no depende de su posicion si no de su contenido.</p>
+    <p>Pueden exitir varios footer</p>
+    <p>Igualmente los foooter pueden estar dentro de otros tags</p>
+
+    <footer style="background-color: gray;">
+        <a href="htmlEstructura.html">htmlEstructura</a>
+    </footer>
+
+    <h5 class="etiq-cont">article: (html-body-)  <span class="atrib"> </span>  </h5>
+    <p>Otro tipo de agrupador para contenido relacionado pero el contenido debe ser autonomo.</p>
+    <p>Es una pieza de contenido que se puede enviar, compartir o consumir de forma independiente.</p>
+    <p>Se trata que el articulo este completo que tenga sentido como un todo.</p>
+
+    <h5 class="etiq-cont">aside: (html-body-)  <span class="atrib"> </span>  </h5>
+    <p>Es una etiqueta de agrupacion que agrupa contenido relacionado con algun hermano dentro y por tanto se complementa con otro tag agrupador</p>
+    <p>Complemento de lo que esta al lado</p>
+    
+
+    <h5 class="etiq-cont">nav: (html-body-)  <span class="atrib"> </span>  </h5>
+    <p>Esta seccion con enlaces de navegacion disenado para contener todas las estructuras que permitan la navegacion de la paguina web</p>
+    <p>pueden existir varios nav</p>
+    <p>Tipico menu debe ser un nav</p>
+
+    <h5 class="etiq-cont">main: (html-body-main)  <span class="atrib"> </span>  </h5>
+    <p>Con peso semantoco absoluto, representa el contenedor principal de una paguina.</p>
+    <p>Agrupa el contenido principal</p>
+    <p>No debe haber mas de un main por documento.</p>
+    <p>No debe incluirce en un nav, article ,section ,aside ,footer o header</p>
+
+    <h5 class="etiq-cont">div: (html-body-)  <span class="atrib"> </span>  </h5>
+    <p>Este era el contenedor que se utilizaba antes de html5 todos los contenedores anteriores son especies de div con significado semantico</p>
+
+
+
+
+
+                
+    <h1 id="cssEsencial">Que es CSS: Cascading Sheet Style</h1>
+    <p>Hojas de estilo en cascada.</p>
+    <p>Permite separar el estilo de la pagina del la estructura que se forma con el html.</p>
+
+    <p>Es un lenguaje que permite definir los estilos visuales de un documento HTML. CSS --> selector {propiedad: valor}</p>
+            
+
+    <h2>INCLUIR</h2>
+
+    <ul>
+        <li>Estilo Interno: En el head con la etiqueta style</li>
+        <li>Estilo Externo (recomendado):En el <span class="etiq">head</span> importando un achivo .css etiqueta <span class="etiq">link</span></li>
+        <li>Estilo Inline: Directo en cada etiqueta con el atributo <span class="atrib">style</span></li>
+    </ul>
+
+    <h1 id="cssSelectores">SELECTORES</h1>
+    <p>Seleccionar con CSS. Especifica la forma de seleccionar a donde se aplicara el estilo.</p>
+
+    <h2 id="cssSelectoresT">SELECTORES DE TIPO (TAG)</h2>
+
+    <h2>SELECTOR TIPO ELEMENTO: Aplica a tododos los elementos de la etiqueta establecida.</h2>
+    <p>selectTag { atributo: propiedad: "Valor", propiedad: "Valor";
+                atributo: propiedad: "Valor", propiedad: "Valor";}</p>
+            
+    <h2>selctTag , selctTag {} Aplicar a todos los Selector y Selector.</h2>
+    <p> selctTag, selctTag { propiedad: "Valor", propiedad: "Valor"; propiedad: "Valor", propiedad: "Valor";}</p>
+
+    <h2 id="cssSelectoresDesc">SELECTORES DESENDIENTES selectorN selectAbuelo selectPADRE selectHijo{}</h2>
+    <p> Relacion Gerarquica. Todos los selectores que esten dentro de SelectorPadre</p>
+    <p> selectTagPADRE selectTagHijo {  propiedad: "Valor", propiedad: "Valor"; propiedad: "Valor", propiedad: "Valor";}</p>
+    <p>Todos los elementos que deciendan de otro inmediato. Que este dentro de otro. Es mas especifico. </p>
+    <p>Pueden estar formados por tipo, clase, ID o una combinacion.</p>
+
+    <h3>selectTagPADRE selecTagtHijo{} </h3>
+    
+    <section id="ejeDesc">
+        <article>
+            <nav>Primer nav</nav> 
+            <nav>Segundo nav</nav>
+            <p>Primer parrafo</p>
+            <p class="segD negrita" >Segundo parraf</p>
+        </article>
+    </section>
+
+    <h3>selectClassAbue selectTagPadre selecIDtHijo{} </h3>
+    
+    <section class="ejemDesc">
+        <article><nav id="ePN">Primer nav</nav> <nav>Segundo nav</nav></article>
+    </section>
+    
+    <h2 >SELECTOR DE DESENDENCIA  ">" ??</h2>
+    <p> selectTag > selectTag { propiedad: "Valor", propiedad: "Valor";  propiedad: "Valor", propiedad: "Valor";}</p>
+
+    <h2>SELECTORES DE CLASE</h2>
+    <p>Se debe agregar un atributo class en el html</p>
+    <p> Amplia el control sobre las etiquetas especificas a las cuales se quiere agregar el estilo. </p>
+    <p>pensadas para ser reutilizadas para diferentes etiquetas y en cualquier documento.</p>
+
+    <h3>Definicion de la clase:  .selectClass{}</h3>
+    <p>Todos las etiquetas html que tengan el atributo <span class="etiq">class</span> el valor es la clase definida.</p>
+    <p>Eljemplo <span class="resaltador">APLICANDO LA CLASE</span></p>
+    
+    <h3>Gerarquia. Agregando selector (padre hijos):  selectTag .selectClas {}</h3>
+    <p>Todas las etiquetas que posean la clase y que esten dentro de la etiqueta padre. </p>
+    <ul>
+        <li class="resaltador">Ejemplo: CLASE CON GERARQUIA DE SELECTOR </li>
+    </ul>
+
+    
+
+    <h2>SELECTORES DE ID</h2>
+
+    <p>Asignar atributo id en el documento html.</p>
+    <p>Deben aplicarce una unica vez a diferencias de las clases pensadas para ser reutilizadas<span></span></p>
+
+    <p>selectID {}</p>
+    <div id="selectoridejm"> 
+        <h5>Ejemplo de selector de id</h5>
+    </div>
+
+    <h5 id="selectoridelemnto">Ejemplo selector id especializado para elemento</h5>
+
+    
+
+    <h3>HERENCIA y GERARQUIA. Agregando selector:  selectTag.SelectClass  selectTag{}</h3>
+    <p>Todas las etiquetas que posean la clase y que esten dentro de la etiqueta padre. </p>
+    <ul class="colorheredado">
+        <li >Ejemplo: HERENCIA + GERARQUIA </li>
+        <li >Ejemplo: HERENCIA + GERARQUIA </li>
+        <li >Ejemplo: HERENCIA + GERARQUIA </li>
+    </ul>
+   
+    
+
+    <h3>COMBINACIONES MULTIPLES</h3>
+    <p>Todas las etiquetas que posean la clase y que esten dentro de la etiqueta padre. </p>
+    <h1 class="comb"> COMBINADO
+        <span class="combb">COMBINADO</span>
+    </h1>
+    
+
+    <h2 id="seudoClass">PSEUDO CLASES:  Relacion Especifica.</h2>
+    <p> Cuando se selecciona dependiendo de un cambio en el estado del elemento, una posicion especifica o una relacion. </p>
+    <p> Es una seudo seleccion por que no esta el 100% del tiempo.</p>
+    <ul>
+        <li>ESTADO: <span>selector: estado {} </span></li>
+        <li>POSICION: <span>selector: posicion {}</li>
+        <li>RELACION: <span>selector: relacion {}</li>                
+    </ul>
+
+    <h3>Pseudo Clase: Estado</h3>
+    <p>selector selector element:estado {} el elemento q este dentro de dos cosas</p>
+    <p>selector  :estado {} cualquier cosa que este dentro de el selector</p>
+    <p>selector selector selector:estado {}</p>
+    <p>Buscando un estado especial del elemento.</p>
+    <h4>:hover</h4>
+    <a id="ejmSCEstado" href="Enlace-hover">Enlace-hover</a>
+    <h4>:focus</h4>
+    <input id="ejmSCEstadof" type="text">
+
+    <h4>:Active</h4>
+    <a id="ejmSCEstadoA" href="Enlace-active">Enlace-active</a>
+    <h4>:visited</h4>
+    <a id="ejmSCEstadoV" href="Enlace-visited" >Enlace-visited</a>
+
+
+
+    <h3>Pseudo Clase: Posicion</h3>
+
+    <h4>:first-of-type</h2>
+    <div id="ejmSCPosition">
+        <p>parrafo "PRIMERO DE SU TIPO"</p>
+        <p>parrafo</p>
+        <span>Span Hola "PRIMERO DE SU TIPO"</span>
+        <p>parrafo</p>
+        <span>Otro Span</span>
+        <p>parrafo</p>
+    </div>
+
+    <h4>:first-child</h2>
+
+    <div id="ejmSCPositionfc">
+        <p>parrafo "PRIMER HIJO"</p>
+        <p>parrafo</p>
+        <span>Span Hola</span>
+        <p>parrafo</p>
+        <span>Otro Span</span>
+        <p>parrafo</p>
+    </div>
+   
+
+    <h4>:only-child</h2>
+
+    <div id="ejmSCPositionoc">
+        
+        <span>Span Hola  "UNICO HIJO"</span>
+        
+        
+    </div>
+    <h4>:nth-child()</h2>
+    <p>nth-child(odd) impares, nth-child(even) pares, nth-child(2n) 2,4,6.., nth-child(3n+2) 2, 5, 8, nth-child(-n+4)  1,2,3,4 </p>
+    <p>n es 0, 1, 2, 3, 4</p>
+
+    <p>NOTA: nth-last-child() es igual pero inicia desde el ultimo</p>
+    <div id="ejmSCPositionoc">
+        
+        <p>parrafo</p>
+        <p>parrafo</p>
+        <p>parrafo</p>
+        <p>parrafo</p>
+        <p>parrafo</p>
+        <p>parrafo</p>
+        <p>parrafo</p>
+        <p>parrafo</p>
+        <p>parrafo</p>
+        <p>parrafo</p>
+        <p>parrafo</p>
+        <p>parrafo</p>
+        
+    </div>
+    
+    <h5><code>span:nth-child(2n+1)</code>, WITHOUT an<code>&lt;em&gt;</code> among the child elements.</h5>
+    <p>Children 1, 3, 5, and 7 are selected.</p>
+    <div id="fnth" class="first">
+           <span>Span 1!</span>
+           <span>Span 2</span>
+           <span>Span 3!</span>
+           <span>Span 4</span>
+           <span>Span 5!</span>
+           <span>Span 6</span>
+           <span>Span 7!</span>
+    </div>
+         
+    <br>
+         
+         
+    <h5><code>span:nth-child(2n+1)</code>, WITH an<code>&lt;em&gt;</code> among the child elements.</h5>
+    <p>Children 1, 5, and 7 are selected.<br>3 is used in the counting because it is a child, but it isn't selected because it isn't a <code>&lt;span&gt;</code>.</p>
+    
+    <div id="snth" class="second">
+           <span>Span!</span>
+           <span>Span</span>
+           <em>This is an `em`.</em>
+           <span>Span</span>
+           <span>Span!</span>
+           <span>Span</span>
+           <span>Span!</span>
+           <span>Span</span>
+    </div>
+    <br>
+    <h5><code>span:nth-of-type(2n+1)</code>, WITH an<code>&lt;em&gt;</code> among the child elements.</h5>
+    
+    <p>Children 1, 4, 6, and 8 are selected.<br>3 isn't used in the counting or selected because it is an <code>&lt;em&gt;</code>,not a <code>&lt;span&gt;</code>, and <code>nth-of-type</code> only selects children of that type. The <code>&lt;em&gt;</code> is completely skipped over and ignored.</p>
+    <div id="tnth" class="third">
+           <span>Span!</span>
+           <span>Span</span>
+           <em>This is an `em`.</em>
+           <span>Span!</span>
+           <span>Span</span>
+           <span>Span!</span>
+           <span>Span</span>
+           <span>Span!</span>
+    </div>
+
+    <h3>Pseudo Clase: Relacion</h3>
+
+    <h4>:not(.dest)</h2>
+        <p>Que no posea una relacion especial</p>
+        
+    <div id="ejmSCRelacion">
+        <p class="dest">Parrafo clase dest"</p>
+        <p class="">Parrfo"</p>
+        <p class="">parrafo "</p>
+        <p class="">parrafo"</p>
+        <p class="dest">parrafo dest"</p>
+        
+    </div>
+
+    <h2 id="pseudoElemeto">Selectores PSEUDO ELEMENTO :  Selector de una parte de un tipo de elemento.</h2>
+    <p> Un mecanismo que otorga mayor precision a la hora de crear estilos CSS y composiciones HTML. </p>
+    <p>Los pseudo elementos son partes especificas de un elemento.</p>
+    <p>Para los pseudo elementos se especifican con dos puntos (::) </p>
+
+    <h3>Pseudo elementos tipograficos</h3>
+    
+    <h4>::first-line,  ::first-letter </h4>
+    <p id="ejmSE">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic tempora sed nam itaque rerum fuga impedit voluptatum voluptatibus nostrum ducimus repellat dolorum, accusantium laboriosam modi id harum officiis molestias eum! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, architecto molestiae cum non impedit vel quos? A repudiandae praesentium quasi unde quos blanditiis, recusandae itaque saepe deleniti in adipisci totam!</p>
+
+    <h3>Pseudo Elementos de contenido</h3>
+    <h4>::before, ::after</h4>
+    <p>before Introduce algo antes del elemento seleccionado</p>
+    <p>after Introduce algo al final</p>
+    <p>Se puede agregar cualquier cosa imagenes textos cualquier elemento html</p>
+
+    
+        <section id="speudoe">
+
+            <ul>
+                <li>HOla</li>
+                <li>Hola</li>
+                <li>hola</li>
+                
+            </ul>
+        </section>
+
+    <p id="ejmSE_B">Ejemplo de before</p>
+
+    <h4>::marker ::seleccion </h4>
+
+    <ul id="ejmSE_marker">
+        <li>marker</li>
+        <li>marker</li>
+        <li>marker</li>
+    </ul>
+
+    <h2>CASCADA</h2>
+    <p>Es el orden de aplicacion de los estilos creados en css</p>
+    <p>El orden es de arriba (Menor priorida) hacia abajo (Mayor Prioridad)</p>
+    <p>Para un elemento pueden existir varios estilos que colicionan por esto es la cascada</p>
+    <p>Losestilos se combinan tomando en cuenta la prioridad pero se hace una combinacion de los que son diferentes.</p>
+
+    <ol>
+        <li class="nivel">Nivel mas bajo. De archivo incluido .css: De menor prioridad y la mejor practica (Amarillo oscuro)</li>
+        <li class="nivel">Nivel medio bajo. De cabecera (Azul)</li>
+        <li class="nivel" style="color: green;">Nivel alto. De etiqueta (Verde)</li>
+        <li class="nivel">Nivel mayor. De !importatant: De mayor prioridad (Amarilli Ocuro)</li>
+    </ol>
+
+    <p>Tambien existe cascada en el mismo dcumento si estan repetidos los estilos</p>
+
+    <p > <span class="niveldoc">Nivel de mismo documento (Primero rojo, Segundo Azul). Toma en cuenta el ultimo definido y combinando.</span></p>
+
+
+    <h1>Box Model</h1>
+    <p>Todos los elemento que estan dentro del body se presentan en una caja (rectangulo).</p>
+    <p>El modelo de caja calcula los espacios y son invicibles por defecto. </p>
+
+    <p>Se puede cambiar el nivel de la caja con el atributo <span class="atrib">display</span> valores inline (Ocupa solo el espacio necesario) y block (Ocupa toda la linea)</p>
+    <p>[Margin[Boder[Padding[CONTENIDO Heading Whith]Padding]Boder]Margin]</p>
+    <h1 class="boxmodel">BOX MODEL EJEMPLO</h1>
+
+    <h1>HERENCIA CSS  heredabel inherit</h1>
+    <p>Es un fenome donde los elementos anidados (hijos -chidren) heredan las propiedades y estilos de sus padres (parent)</p>
+
+    <p> Por defecto estos atributos que son heredados automaticamnte tienen el estado: <span class="atrib">atributo: inherit</span> </p>
+
+    <p>Algunas propiedades no estan por defecto heredadas por ejemplo <span class="atrib">border</span></p>
+
+    <p style="color: red; border: 2px solid blue; ">Ejemplo de Herencia: <span style="border: inherit;">ESTO ES UN SPAN BORDE:INHERIT</span> 
+    
+    En este caso se hereda el color en los hijos pero el border no ya que este atributo no es por defecto heredabel y hay q especificar
+
+<span>OTRO SPAN </span> y especificando</p>
+
+
+
+    <p>
+        Para verificar buscar la propiedades que se heredan por defecto  BUSCAR EN GOOGLE 
+        <span style="font-weight: bold; font-style: italic;"> "which css properties are inherit"</span>
+    </p>
+
+    <h1>ESPECIFICIDAD CSS</h1>
+    <p>Es una seride de factores que converte los selectores en numeros que determinan su peso y dependiendo de su peso (Coefic)se aplicara </p>
+
+    <h2>Coeficente de Especificidad</h2>
+
+    <p>El indice de especificidad se determina por la prioridad de los selectores</p>
+    <p><span style="border: 2px solid chartreuse; font-size: 2em;">0 <span style="font-size: 0.5em;">linea</span>,0 <span  style="font-size: 0.5em;">ID</span>,0 <span  style="font-size: 0.5em;">clase</span>,0 <span  style="font-size: 0.5em;">tipo</span></span> (Estilos en linea, cantidad de selelectores id aplicados, cantidad de selectores de clase aplicados , cantidad de selectores de tipo)</p>
+
+    <p>Calculos especificidad</p>
+    <p><div class="mini-cuadro"> h1 {color:red;}</div> 0,0,0,1</p>
+    <p> <div class="mini-cuadro">.destacado {font-weight:bold;} </div> 0,0,1,0</p>
+    <p> <div class="mini-cuadro">#titulo {font-size: 2em;} </div> 0,1,0,0</p>
+    <p> <div class="mini-cuadro">h1 style="color:blue;">Info/h1 </div> 1,0,0 ,0</p>
+    <p> <div class="mini-cuadro">p {color:green !important}</div> 9,9,9,9</p>
+
+    <p> <div class="mini-cuadro">#cabecera #menu-principal ul li a.actual {}</div> 0,2,1,3</p>
+
+    <p>EJEMPLO ESPECIFICIDAD <samp id="ejEspecifi" class="ejEspecifi">Donde se aplica dos clase y id (prevalece #id) </samp> (,)</p>
+
+    <h1>OVERFLOW Desbordamiento</h1>
+    <p>Que ocurre cuando um elmento hijo sobre pasa el tamno de su padre es decir lo desborda</p>
+
+    <p>overflow: visibel (defecto), hidden, scroll, </p>
+
+    <div style=" background: brown; width: 300px; height: 100px; margin: 0 auto; overflow: scroll;">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint at eveniet eos eligendi quidem quis architecto voluptatibus culpa ipsam amet! Neque incidunt quae quam quod dignissimos? Quia corporis quas blanditiis.</p>    
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis libero sed exercitationem distinctio nobis ipsa officia! Facere labore quaerat excepturi, sint neque similique corrupti rerum itaque soluta? Cumque, similique nostrum. </p>
+    </div>
+    <h1>COLAPSO DE MARGENES</h1>
+    
+    <p>Si varios margenes relacionados se tocan entre si, se pueden formar un unico margen que toma el valor mayor.</p>
+    <p>Si uno de los margenes es negativo y otro es positivo se suman algebraicamente y si el resultado es negativo se solapan los elementos.</p>
+
+    <h2>Exepciones</h2>
+    <p>El colapso no ocurre con elementos que flotan.</p>
+    <p>El colapso no ocurre con elementos posicionados.</p>
+    <p>El colapso no ocurre con elementos de inline-block.</p>
+    <p>El colapso no ocurre con elementos que tengan propiedad overflow configurada con algo difeente a visible.</p>
+    <p>El colapso no ocurre con elementos que tengan propiedad clear</p>
+    <p>El colapso no ocurre con elementos root (Elemento raiz)  de html</p>
+    
+    <h3>Ejemplo elementos continuos</h3>
+    <div style=" background: brown; width: 100px; height: 100px; margin-bottom: 50px;"></div>
+     <div style=" background: indigo; width: 100px; height: 100px; margin-top: -30px;"></div>
+       
+     <div style=" background: hsl(248, 47%, 41%); width: 100px; height: 100px; margin-bottom: 20px;"></div>
+     <div style=" background: rgb(130, 102, 0); width: 100px; height: 100px; margin-top: -30px; opacity: 0.4 ;"></div>
+       
+     <h3>Ejemplo elementos anidados</h3>
+
+     <p>El margen se anida igual se suma o se restan dependiendo si es positivo o negativo.</p>
+     <p>Si el elemento contenedor tiene un border o un padding ya los margenes no se tocan y no colapsan.</p>
+     <div style="width:100% ;height:2px; background-color: black;"></div>
+     <div style="width:500px; min-height: 300px; background-color: gray; margin: 0 auto; padding: 0; "> 
+    
+        <div style="height:60px; background-color: greenyellow; margin-top: 10px;">CABECERA</div>
+    </div>
+
+
+
+
+   
+</body>
+</html>

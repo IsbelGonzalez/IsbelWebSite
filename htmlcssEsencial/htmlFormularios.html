@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/htmlcssesencial/main.css">
+    <link rel="stylesheet" href="/css/htmlcssesencial/htmlFormularios.css">
+    <title>HTML Formularios</title>
+</head>
+<body>
+
+    <h1>FORMULARIOS</h1>
+    <p><span class>CODE PEN parcticar y ver proyectos HTML, CSS, JS realizados por usuarios solo se escribe lo que va en el  body<a href="codepen.io">codepen.io</a></span>
+
+    </p>  
+
+    <p>Generalmente por defecto los elemnetos del formulario son display: inlien</p>
+    <form action="">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre">
+
+        <label for="consulta">Consulta:</label>
+        <textarea name="" id="consulta" cols="30" rows="5"></textarea>
+
+        <!-- Los radio botones se debe agregar eb bame para relacionar el grupo  -->
+        <label for="horario">Horario</label>
+        <input type="radio" name="horario" value="m">Manana
+        <input type="radio" name="horario" value="t">Tarde
+        <input type="radio" name="horario" value="n">Noche
+
+        <label for="dia">Dias</label>
+        <input type="checkbox" name="dia">Lunes
+        <input type="checkbox" name="dia">Martes
+        <input type="checkbox" name="dia">Miercoles
+        <input type="checkbox" name="dia">Jueves
+        <input type="checkbox" name="dia">Viernes
+        <input type="checkbox" name="dia">Sabado
+        <input type="checkbox " name="dia">Domingo
+
+
+        <label for="ciudad">Ciudad</label>
+        <select name="ciudad" id="">
+            <option value="valencia">Valencia</option>
+            <option value="Merida">Merida</option>
+            <option value="Maracay">Maracay</option>
+        </select>
+
+        <input type="submit" value="Enviar Formulario">
+    </form>
+</body>
+</html>
