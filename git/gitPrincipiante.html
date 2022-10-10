@@ -219,43 +219,63 @@
                           <td>$git remote  origin -v</td>
                           <td>Consulta si existe y se ven las url configuradas. </td>
                         </tr>
-
                         <tr>
                           <td>Remote - push</td>
                           <td>$git push -u origin master </td>
-                          <td>Envia todos los archivos al repositorio remoto el -u solo es una vez que enlasa la rama con el remoto(origi)</td>
+                          <td>Envia todos los archivos del repositorio remoto configurado(origin) al repositorio remoto(gitHub) creado el -u solo es una vez que enlaza la rama (master) con el remoto (origin).</td>
                         </tr>
-
                         <tr>
                           <td>Remote - push</td>
                           <td>$git push -u origin rama-1 </td>
-                          <td>Subir una rama especifica.</td>
+                          <td>Subir los commits a el repositorio remoto. Especificando en que rama. Por defecto solo sube una rama en la que estamos ubicados.</td>
                         </tr>
-
                         <tr>
                           <td>Remote - push</td>
                           <td>$git push  </td>
-                          <td>Para subir los commits.</td>
+                          <td>Para subir los commits al repositorio remoto si ya anteriormente se configuro ya no es necesario especificar n la rama ni el repositorio.</td>
                         </tr>
-
+                        <tr>
+                          <td>Remote - push</td>
+                          <td>$git push --force  </td>
+                          <td>(push -f)Remplaza la rama remota con lo que tenemos en local. Cuando por ejemplo se cambia el mensaje de un commit y se tiene que forzar por el conflicto. Tratar de no hacer en master peligroso.</td>
+                        </tr>
                         <tr>
                           <td>Remote - clone</td>
                           <td>$git clone https://github.com/isbelgonzalez/nombreRepositorio.git  </td>
-                          <td>Clonar un repositorio. Se debe ubicar el pront en la carpeta madre el creara una carpeta con el nombre del repositorio. Ya con esto esta configurado el repositorio remoto apuntando a origin usar (git remote) (git remote -v) .</td>
+                          <td>Clonar un repositorio. Se debe ubicar el pront en la carpeta madre el creara una carpeta con el nombre del repositorio. Ya con esto esta configurado el repositorio remoto apuntando a origin usar (git remote) (git remote -v) .
+                          Cuando se clona solo trae la rama master.
+                          </td>
                         </tr>
-
                         <tr>
                           <td>Remote - fetch</td>
                           <td>$git fetch origin </td>
-                          <td>Revisa si hay cambios en el repositorio remoto(origin).</td>
+                          <td>Revisa si hay cambios en el repositorio remoto(origin) para que en el local se persivan aunque en local no existen aun. Los cambios icluso se pueden hacer desde github. Siempre ejecutar para verificar si hay cambios fuera en la nuve. Ejecutar dentro de cada rama.</td>
                         </tr>
-
                         <tr>
                           <td>Remote -Branch cheackot</td>
-                          <td>$git checkort nombreRama </td>
-                          <td>Descargar una rama del repositorio remoto.</td>
+                          <td>$git checkout nombreRama </td>
+                          <td>Descargar una rama del repositorio remoto. Antes debe existir en el remoto la rama usar el fetch para poder verla.</td>
                         </tr>
-
+                        <tr>
+                          <td>Remote - pull</td>
+                          <td>$git pull</td>
+                          <td>(Jalar) Trae los commit desde el repositorio remoto al repositorio local (no hace falta el fetch pero es mas para verificar) (El origen se puede especificar si no se hizo en el push por ejemplo $git pull origin master). </td>
+                        </tr>
+                        <tr>
+                          <td>Historia commit</td>
+                          <td>$git commit --amend</td>
+                          <td>Cambiar el mensaje de un commit.</td>
+                        </tr>
+                        <tr>
+                          <td>Remote reset</td>
+                          <td>$git reset --hard origin/nombre-rama</td>
+                          <td>Resetear nuestra rema y sustituirla con lo que esta en remoto .</td>
+                        </tr>
+                        <tr>
+                          <td>Remote rebase</td>
+                          <td>$git rebase origin/master</td>
+                          <td>Actualiza la rama donde estamos ubicados. Trae los commits que se encuentran en master y aplica los commists que tenemos nuevos en nuestra rama. Luego hacer push --force ya que hay comflictos con los commmits</td>
+                        </tr>
                       </table>
                 
                
