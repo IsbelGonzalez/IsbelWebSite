@@ -264,7 +264,7 @@
                         <tr>
                           <td>Historia commit</td>
                           <td>$git commit --amend</td>
-                          <td>Cambiar el mensaje de un commit.</td>
+                          <td>Cambiar el mensaje de un commit (--no-edit solo cambia los archivos del commmit pero no edita el mensaje).</td>
                         </tr>
                         <tr>
                           <td>Remote reset</td>
@@ -275,6 +275,30 @@
                           <td>Remote rebase</td>
                           <td>$git rebase origin/master</td>
                           <td>Actualiza la rama donde estamos ubicados. Trae los commits que se encuentran en master y aplica los commists que tenemos nuevos en nuestra rama. Luego hacer push --force ya que hay comflictos con los commmits</td>
+                        </tr>
+
+                        <tr>
+                          <td>Repository reset</td>
+                          <td>$git reset --hard HEAD^^</td>
+                          <td>--hard (Elimina el commit totalmente y los cambios el local). --soft (Elimina el commit pero deja los cambios en local por si se quiere hacer una modificacion). HEAD  (los ultimos commit) ^^(cuantos commits, los dos ultimos tambien se puede usar HEAD~15 los ultimos 15 commits)</td>
+                        </tr>
+
+                        <tr>
+                          <td>Repository </td>
+                          <td>$git reset --hard HEAD@{1}</td>
+                          <td>En el caso q se devolver un commit anteriormente borrado y se quiera volver a obtener el commit borrado. Usar reflog para buscar la referencia.(HEAD@{1})</td>
+                        </tr>
+
+                        <tr>
+                          <td>Historia commit</td>
+                          <td>$git reflog</td>
+                          <td>Muestra todos los commit aunque se borren con reset --hard..</td>
+                        </tr>
+
+                        <tr>
+                          <td>Repository rebase</td>
+                          <td>$git rebase -i HEAD~4</td>
+                          <td>(cambiar los ultimos 4 commits).  opciones (pick: usar commit, reword: editar mensaje, squash: usar este commit combinarlo al anterior, fixup: combinar commit y descartar el mensaje, drop: borrar commit). Como esto cambia los commits va a crear conflictos para subir al remoto (git push --force) no recomendado en master y otros desarrolladores deben ejecutar (git fetch origin y git reset --hard origin/master) para poder descargar los cambios y aplicarlos en sus repositorios locales.</td>
                         </tr>
                       </table>
                 
@@ -380,6 +404,12 @@
                           <td>Borrar carpeta</td>
                           <td>rm -rf carpeta/</td>
                           <td>Se debe estar en el directorio padre de la carpeta a borrar.</td>
+                        </tr>
+
+                        <tr>
+                          <td>Editor de texto</td>
+                          <td>$git commit --amend </td>
+                          <td>Insertar usar I. Escape para salir de la insercion. :wq salimos del editor.</td>
                         </tr>
                         
                       </table>
