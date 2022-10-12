@@ -300,6 +300,46 @@
                           <td>$git rebase -i HEAD~4</td>
                           <td>(cambiar los ultimos 4 commits).  opciones (pick: usar commit, reword: editar mensaje, squash: usar este commit combinarlo al anterior, fixup: combinar commit y descartar el mensaje, drop: borrar commit). Como esto cambia los commits va a crear conflictos para subir al remoto (git push --force) no recomendado en master y otros desarrolladores deben ejecutar (git fetch origin y git reset --hard origin/master) para poder descargar los cambios y aplicarlos en sus repositorios locales.</td>
                         </tr>
+
+                        <tr>
+                          <td>Repository tag</td>
+                          <td>$git tag nombreTag</td>
+                          <td>Etiqueta ligera. Agrega un alias al ultimo commmit</td>
+                        </tr>
+                        <tr>
+                          <td>Repository tag</td>
+                          <td>$git tag -a "nombreTag" -m "mensaje informativo"</td>
+                          <td>opcion -a (anotate) agrega mas informacion. Es lo recomendado. Podemos ver el author. </td>
+                        </tr>
+                        <tr>
+                          <td>Repository tag</td>
+                          <td>$git tag </td>
+                          <td>Muestra el tag si se ha creado alguno.</td>
+                        </tr>
+
+                        <tr>
+                          <td>Repository tag</td>
+                          <td>$git show nombreTag </td>
+                          <td>Muestra  la informacion de la etiqueta.</td>
+                        </tr>
+
+                        <tr>
+                          <td>Remote tag</td>
+                          <td>$git push origin --tags  $git push origin nombreTag </td>
+                          <td>Subir al remoto las etiquetas o si es una sola con el nombre.</td>
+                        </tr>
+
+                        <tr> 
+                          <td>Directory tag</td>
+                          <td>$git tag -d nombreTag</td>
+                          <td>Borrar la etiqueta del repositorio local.</td>
+                        </tr>
+
+                        <tr> 
+                          <td>Remote tag</td>
+                          <td>$git push --delete nombreRemoto nombreTag</td>
+                          <td>Borrar la etiqueta del repositorio local. (nombreRemoto - origin).</td>
+                        </tr>
                       </table>
                 
                
@@ -345,6 +385,28 @@
               </article>
             </div>
 
+            <article>
+              <h1>GIT tags</h1>
+              <p>Un nombre que se le da a un commit. Alias de un commit. Este permite ver los commits hasta este punto en gitHub indispensable por ejemplo se crean tags con los nombres de las versiones.</p>
+              <p>En gitHub si vas a Branch en esta opcion tambien lista los tags. Cuando se seleciona una etiqueta se ve el historial de commits hasta que se creo ese tag.</p>
+              <p>Otra forma de ver los tags en gitHub es en la opcion de releases aqui se ven los tags y se pueden descargar.</p>
+            </article>
+
+            <article>
+              <h1>gitHub</h1>
+
+              <p>Url del repositorio remoto: github.com/isbelGonzalez</p>
+              <p>Url de un proyecto: github.com/isbelGonzalez/nombreProyecto</p>
+
+              <h2>Code</h2>
+              <p>Lista los archivos que se encuentran en el repositorio</p>
+              <p>Crear, Modificar , buscar: Opciones de los archivos.</p>
+              <p>Commits: Lista de los commits realizados.</p>
+              <p>Branches: Ver las ramas que existen.</p>
+              <p>Colaboradores: Personas usuarios que colaboran en el codigo.</p>
+              
+              
+            </article>
                 
             <article>
                 
